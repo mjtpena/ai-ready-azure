@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "marp-team.marp-vscode",
+    "ms-python.python",
+    "ms-azuretools.vscode-bicep",
+    "ms-vscode.azurecli"
+  ]
+}

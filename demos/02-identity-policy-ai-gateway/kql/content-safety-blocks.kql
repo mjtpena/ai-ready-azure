@@ -1,0 +1,10 @@
+// Prompts stopped at the gate by llm-content-safety (HTTP 403 before the backend is called).
+// Log Analytics workspace -> Logs. BackendResponseCode is empty because the request never reached Foundry.
+// verify when recording: the LastErrorSource / LastErrorReason wording for llm-content-safety; widen the filter if needed.
+ApiManagementGatewayLogs
+| where TimeGenerated > ago(1d)
+| where ResponseCode == 403
+| where isempty(BackendResponseCode) or LastErrorSource has "content-safety" or LastErrorReason has "ContentSafety"
+| extend team = tostring(RequestHeaders["x-team"]), siteGroup = tostring(RequestHeaders["x-site-group"])
+| project TimeGenerated, ApimSubscriptionId, team, siteGroup, CallerIpAddress, OperationId, LastErrorSource, LastErrorReason, LastErrorMessage
+| order by TimeGenerated desc

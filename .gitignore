@@ -1,0 +1,71 @@
+# Node (slide generator)
+slides/node_modules/
+slides/dist/*.pdf
+slides/dist/*.png
+slides/dist/png/
+slides/dist/render/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.env
+*.egg-info/
+
+# Deployment outputs, eval results and anything with live identifiers
+demos/02-identity-policy-ai-gateway/.deploy-outputs.json
+demos/04-trace-and-evaluate/eval/**/results.json
+demos/04-trace-and-evaluate/eval/**/summary.txt
+demos/04-trace-and-evaluate/eval/**/evaluate.log
+*.local.json
+
+# Video production: rendered media, recorded portal clips, the voice cache and the Playwright profile are regenerated
+video/media/
+video/voice/
+video/clips/**/*.mp4
+video/clips/**/*.webm
+video/.video-tmp/
+video/pw-profile/
+*.wav
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+.idea/
+
+# scratch question files written by recorded commands
+.hero.txt
+.q1.txt
+
+# draft storyboards derived from video/scenes (regenerated)
+video/scenes-draft/
+course-draft.yaml
+demos/04-trace-and-evaluate/eval/red_team.json
+demos/04-trace-and-evaluate/eval/red_team_region.json
+demos/04-trace-and-evaluate/eval/red_team_region.env
+
+# Kept out of the public repository: the private banned-word list (CI reads it from the SCRUB_FORBIDDEN secret),
+# the video production pipeline, its reports and the course packaging notes
+scripts/forbidden.json
+video/
+narration/
+course.yaml
+EDITORIAL.*
+TASTE.*
+RUN_REPORT.md
+REVIEW.md
+docs/RECORDING.md
+docs/COURSE-OUTLINE.md
+scripts/check_scenes.py
+tests/test_scenes.py
+slides/dist/*.marks.json
+slides/dist/*.targets.json
+*.bak
+.video-tmp/
+.video-tmp-npm.log

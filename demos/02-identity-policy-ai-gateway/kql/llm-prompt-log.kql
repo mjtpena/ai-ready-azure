@@ -1,0 +1,8 @@
+// What was actually asked and answered through the gateway: the LLM logging category (GatewayLlmLogs ->
+// ApiManagementGatewayLlmLog) enabled by largeLanguageModel settings in infra/modules/monitoring.bicep.
+// verify when recording: table and column names in your workspace (schema tab) - this feature's schema is newer than GatewayLogs.
+ApiManagementGatewayLlmLog
+| where TimeGenerated > ago(1d)
+| project TimeGenerated, CorrelationId, DeploymentName, ModelName, PromptTokens, CompletionTokens, TotalTokens, RequestMessages, ResponseMessages
+| order by TimeGenerated desc
+| take 20

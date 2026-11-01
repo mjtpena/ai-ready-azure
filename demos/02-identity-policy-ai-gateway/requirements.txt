@@ -1,0 +1,5 @@
+# Client dependencies for client/call_model.py (baselines from docs/SCENARIO.md, PyPI 15 Oct 2026)
+azure-identity>=1.26.0,<2
+openai>=3,<4
+requests>=2.32,<3
+python-dotenv>=1.1,<2

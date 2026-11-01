@@ -1,0 +1,42 @@
+{
+  "name": "hbl-ops-deny-local-auth",
+  "properties": {
+    "displayName": "Harbourline AI guardrail: Foundry and AI Services accounts must disable key-based (local) authentication",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Denies Microsoft.CognitiveServices/accounts (Foundry, Azure OpenAI, AI Services) unless disableLocalAuth is true. Every caller must use Entra ID (managed identity or user token). A leaked key is then worthless because there is no key. Alias: Microsoft.CognitiveServices/accounts/disableLocalAuth (same alias as the built-in 'Cognitive Services accounts should have local authentication methods disabled').",
+    "metadata": {
+      "category": "Harbourline AI Platform",
+      "version": "1.0.0",
+      "layer": "L2 Trust and control"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect",
+          "description": "Deny blocks the deployment; Audit only reports."
+        },
+        "allowedValues": [ "Audit", "Deny", "Disabled" ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "field": "Microsoft.CognitiveServices/accounts/disableLocalAuth",
+            "notEquals": "true"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  }
+}

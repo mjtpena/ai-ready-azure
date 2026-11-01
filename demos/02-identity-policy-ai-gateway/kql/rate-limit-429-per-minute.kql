@@ -1,0 +1,18 @@
+// Gateway 429s (llm-token-limit) per minute, split by team subscription and site group (Log Analytics workspace -> Logs).
+// Source: ApiManagementGatewayLogs via the diagnostic setting in infra/modules/monitoring.bicep.
+// x-site-group and x-team are captured because the azuremonitor diagnostic lists them under frontend.request.headers.
+ApiManagementGatewayLogs
+| where TimeGenerated > ago(1d)
+| where ResponseCode == 429
+| extend siteGroup = tostring(RequestHeaders["x-site-group"]),
+         team = tostring(RequestHeaders["x-team"]),
+         retryAfter = tostring(ResponseHeaders["Retry-After"])
+| summarize throttled = count(), lastRetryAfterSeconds = max(retryAfter) by bin(TimeGenerated, 1m), ApimSubscriptionId, siteGroup, team
+| order by TimeGenerated desc
+
+// Same view from Application Insights (requests table), if the workspace is not open:
+// requests
+// | where timestamp > ago(1d) and resultCode == "429"
+// | extend siteGroup = tostring(customDimensions["Request-x-site-group"])
+// | summarize throttled = count() by siteGroup, bin(timestamp, 1m)
+// | order by timestamp desc

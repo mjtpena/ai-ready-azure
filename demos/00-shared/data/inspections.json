@@ -1,0 +1,4241 @@
+[
+  {
+    "site_id": "HBL-MEL-019",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-10-29",
+    "next_due": "2026-10-29",
+    "certificate_status": "expired",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-014",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-10-29",
+    "next_due": "2026-10-29",
+    "certificate_status": "expired",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-029",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-01",
+    "next_due": "2026-11-01",
+    "certificate_status": "expired",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-016",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-17",
+    "next_due": "2026-11-16",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-025",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-17",
+    "next_due": "2026-11-16",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-003",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-17",
+    "next_due": "2026-11-16",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-029",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-17",
+    "next_due": "2026-11-16",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-002",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-17",
+    "next_due": "2026-11-16",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-017",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-18",
+    "next_due": "2026-11-17",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-004",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-18",
+    "next_due": "2026-11-17",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-030",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-18",
+    "next_due": "2026-11-17",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-003",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-18",
+    "next_due": "2026-11-17",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-018",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-19",
+    "next_due": "2026-11-18",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-001",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-19",
+    "next_due": "2026-11-18",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-005",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-19",
+    "next_due": "2026-11-18",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-004",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-19",
+    "next_due": "2026-11-18",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-019",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-20",
+    "next_due": "2026-11-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-002",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-20",
+    "next_due": "2026-11-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-006",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-20",
+    "next_due": "2026-11-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-005",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-20",
+    "next_due": "2026-11-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-020",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-21",
+    "next_due": "2026-11-20",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-003",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-21",
+    "next_due": "2026-11-20",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-007",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-21",
+    "next_due": "2026-11-20",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-009",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-20",
+    "next_due": "2026-11-20",
+    "certificate_status": "expiring",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-006",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-21",
+    "next_due": "2026-11-20",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-021",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-22",
+    "next_due": "2026-11-21",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-004",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-22",
+    "next_due": "2026-11-21",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-008",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-22",
+    "next_due": "2026-11-21",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-007",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-22",
+    "next_due": "2026-11-21",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-022",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-23",
+    "next_due": "2026-11-22",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-005",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-23",
+    "next_due": "2026-11-22",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-003",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-22",
+    "next_due": "2026-11-22",
+    "certificate_status": "expiring",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-009",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-23",
+    "next_due": "2026-11-22",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-008",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-23",
+    "next_due": "2026-11-22",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-023",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-24",
+    "next_due": "2026-11-23",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-006",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-24",
+    "next_due": "2026-11-23",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-010",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-24",
+    "next_due": "2026-11-23",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-009",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-24",
+    "next_due": "2026-11-23",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-017",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-24",
+    "next_due": "2026-11-24",
+    "certificate_status": "expiring",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-024",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-25",
+    "next_due": "2026-11-24",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-007",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-25",
+    "next_due": "2026-11-24",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-011",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-25",
+    "next_due": "2026-11-24",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-010",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-25",
+    "next_due": "2026-11-24",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-008",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-25",
+    "next_due": "2026-11-25",
+    "certificate_status": "expiring",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-025",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-26",
+    "next_due": "2026-11-25",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-008",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-26",
+    "next_due": "2026-11-25",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-012",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-26",
+    "next_due": "2026-11-25",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-011",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-26",
+    "next_due": "2026-11-25",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-026",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-27",
+    "next_due": "2026-11-26",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-009",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-27",
+    "next_due": "2026-11-26",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-013",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-27",
+    "next_due": "2026-11-26",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-012",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-10-27",
+    "next_due": "2026-11-26",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-004",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-27",
+    "next_due": "2026-11-27",
+    "certificate_status": "expiring",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-014",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-27",
+    "next_due": "2026-11-27",
+    "certificate_status": "expiring",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-011",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-27",
+    "next_due": "2026-11-27",
+    "certificate_status": "expiring",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-007",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-28",
+    "next_due": "2026-11-28",
+    "certificate_status": "expiring",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-011",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-28",
+    "next_due": "2026-11-28",
+    "certificate_status": "expiring",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-006",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-30",
+    "next_due": "2026-11-30",
+    "certificate_status": "expiring",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-025",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-30",
+    "next_due": "2026-11-30",
+    "certificate_status": "expiring",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-MEL-007",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-30",
+    "next_due": "2026-11-30",
+    "certificate_status": "expiring",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-008",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-30",
+    "next_due": "2026-11-30",
+    "certificate_status": "expiring",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-026",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-11-30",
+    "next_due": "2026-11-30",
+    "certificate_status": "expiring",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-001",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-01",
+    "next_due": "2026-12-01",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-027",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-01",
+    "next_due": "2026-12-01",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-010",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-01",
+    "next_due": "2026-12-01",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-014",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-01",
+    "next_due": "2026-12-01",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-013",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-01",
+    "next_due": "2026-12-01",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-002",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-02",
+    "next_due": "2026-12-02",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-028",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-02",
+    "next_due": "2026-12-02",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-011",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-02",
+    "next_due": "2026-12-02",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-002",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-02",
+    "next_due": "2026-12-02",
+    "certificate_status": "expiring",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-015",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-02",
+    "next_due": "2026-12-02",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-004",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-02",
+    "next_due": "2026-12-02",
+    "certificate_status": "expiring",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-014",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-02",
+    "next_due": "2026-12-02",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-003",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-03",
+    "next_due": "2026-12-03",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-029",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-03",
+    "next_due": "2026-12-03",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-012",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-03",
+    "next_due": "2026-12-03",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-016",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-03",
+    "next_due": "2026-12-03",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-015",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-03",
+    "next_due": "2026-12-03",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-004",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-04",
+    "next_due": "2026-12-04",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-021",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-04",
+    "next_due": "2026-12-04",
+    "certificate_status": "expiring",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-030",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-04",
+    "next_due": "2026-12-04",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-013",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-04",
+    "next_due": "2026-12-04",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-021",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-04",
+    "next_due": "2026-12-04",
+    "certificate_status": "expiring",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-017",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-04",
+    "next_due": "2026-12-04",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-016",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-04",
+    "next_due": "2026-12-04",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-005",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-05",
+    "next_due": "2026-12-05",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-031",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-05",
+    "next_due": "2026-12-05",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-014",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-05",
+    "next_due": "2026-12-05",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-018",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-05",
+    "next_due": "2026-12-05",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-017",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-05",
+    "next_due": "2026-12-05",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-006",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-06",
+    "next_due": "2026-12-06",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-016",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-06",
+    "next_due": "2026-12-06",
+    "certificate_status": "expiring",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-032",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-06",
+    "next_due": "2026-12-06",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-001",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-06",
+    "next_due": "2026-12-06",
+    "certificate_status": "expiring",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-MEL-015",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-06",
+    "next_due": "2026-12-06",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-019",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-06",
+    "next_due": "2026-12-06",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-030",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-06",
+    "next_due": "2026-12-06",
+    "certificate_status": "expiring",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-WLG-018",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-06",
+    "next_due": "2026-12-06",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-007",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-07",
+    "next_due": "2026-12-07",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-033",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-07",
+    "next_due": "2026-12-07",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-016",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-07",
+    "next_due": "2026-12-07",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-020",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-07",
+    "next_due": "2026-12-07",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-027",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-07",
+    "next_due": "2026-12-07",
+    "certificate_status": "expiring",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-WLG-019",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-07",
+    "next_due": "2026-12-07",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-008",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-08",
+    "next_due": "2026-12-08",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-034",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-08",
+    "next_due": "2026-12-08",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-017",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-08",
+    "next_due": "2026-12-08",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-021",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-08",
+    "next_due": "2026-12-08",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-020",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-08",
+    "next_due": "2026-12-08",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-009",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-09",
+    "next_due": "2026-12-09",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-035",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-09",
+    "next_due": "2026-12-09",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-018",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-09",
+    "next_due": "2026-12-09",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-022",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-09",
+    "next_due": "2026-12-09",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-021",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-09",
+    "next_due": "2026-12-09",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-010",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-10",
+    "next_due": "2026-12-10",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-036",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-10",
+    "next_due": "2026-12-10",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-019",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-10",
+    "next_due": "2026-12-10",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-023",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-10",
+    "next_due": "2026-12-10",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-022",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-10",
+    "next_due": "2026-12-10",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-011",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-11",
+    "next_due": "2026-12-11",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-037",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-11",
+    "next_due": "2026-12-11",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-020",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-11",
+    "next_due": "2026-12-11",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-024",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-11",
+    "next_due": "2026-12-11",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-023",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-11",
+    "next_due": "2026-12-11",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-012",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-12",
+    "next_due": "2026-12-12",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-038",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-12",
+    "next_due": "2026-12-12",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-021",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-12",
+    "next_due": "2026-12-12",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-025",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-12",
+    "next_due": "2026-12-12",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-024",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-12",
+    "next_due": "2026-12-12",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-013",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-13",
+    "next_due": "2026-12-13",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-039",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-13",
+    "next_due": "2026-12-13",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-022",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-13",
+    "next_due": "2026-12-13",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-026",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-13",
+    "next_due": "2026-12-13",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-025",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-13",
+    "next_due": "2026-12-13",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-014",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-14",
+    "next_due": "2026-12-14",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-040",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-14",
+    "next_due": "2026-12-14",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-023",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-14",
+    "next_due": "2026-12-14",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-001",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-14",
+    "next_due": "2026-12-14",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-027",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-14",
+    "next_due": "2026-12-14",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-015",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-15",
+    "next_due": "2026-12-15",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-024",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-15",
+    "next_due": "2026-12-15",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-002",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-15",
+    "next_due": "2026-12-15",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-028",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-15",
+    "next_due": "2026-12-15",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-001",
+    "system": "fire",
+    "kind": "monthly_test",
+    "last_completed": "2026-11-15",
+    "next_due": "2026-12-15",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-006",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-17",
+    "next_due": "2026-12-17",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-016",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-18",
+    "next_due": "2026-12-18",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-015",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-22",
+    "next_due": "2026-12-22",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-025",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-24",
+    "next_due": "2026-12-24",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-001",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-25",
+    "next_due": "2026-12-25",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-012",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-25",
+    "next_due": "2026-12-25",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-023",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-27",
+    "next_due": "2026-12-27",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-022",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-29",
+    "next_due": "2026-12-29",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-016",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2025-12-31",
+    "next_due": "2026-12-31",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-029",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-01",
+    "next_due": "2027-01-01",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-037",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-01",
+    "next_due": "2027-01-01",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-028",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-02",
+    "next_due": "2027-01-02",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-003",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-04",
+    "next_due": "2027-01-04",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-MEL-017",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-06",
+    "next_due": "2027-01-06",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-023",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-06",
+    "next_due": "2027-01-06",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-027",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-07",
+    "next_due": "2027-01-07",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-002",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-07",
+    "next_due": "2027-01-07",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-WLG-012",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-09",
+    "next_due": "2027-01-09",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-014",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-10",
+    "next_due": "2027-01-10",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-013",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-11",
+    "next_due": "2027-01-11",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-007",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-01-13",
+    "next_due": "2027-01-12",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-025",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-13",
+    "next_due": "2027-01-13",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-015",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-01-16",
+    "next_due": "2027-01-15",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-024",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-15",
+    "next_due": "2027-01-15",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-015",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-17",
+    "next_due": "2027-01-17",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-WLG-023",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-17",
+    "next_due": "2027-01-17",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-030",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-20",
+    "next_due": "2027-01-20",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-021",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-21",
+    "next_due": "2027-01-21",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-016",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-22",
+    "next_due": "2027-01-22",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-006",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-23",
+    "next_due": "2027-01-23",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-024",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-25",
+    "next_due": "2027-01-25",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-001",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-25",
+    "next_due": "2027-01-25",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-001",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-27",
+    "next_due": "2027-01-27",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-023",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-28",
+    "next_due": "2027-01-28",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-010",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-01-30",
+    "next_due": "2027-01-30",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-002",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-03",
+    "next_due": "2027-02-03",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-013",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-03",
+    "next_due": "2027-02-03",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-023",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-05",
+    "next_due": "2027-02-05",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-011",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-05",
+    "next_due": "2027-02-05",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-005",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-06",
+    "next_due": "2027-02-06",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-024",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-06",
+    "next_due": "2027-02-06",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-007",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-07",
+    "next_due": "2027-02-07",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-033",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-09",
+    "next_due": "2027-02-09",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-023",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-10",
+    "next_due": "2027-02-10",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-024",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-17",
+    "next_due": "2027-02-17",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-003",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-17",
+    "next_due": "2027-02-17",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-007",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-21",
+    "next_due": "2027-02-21",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-024",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-24",
+    "next_due": "2027-02-24",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-SYD-016",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-24",
+    "next_due": "2027-02-24",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-029",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-24",
+    "next_due": "2027-02-24",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-020",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-26",
+    "next_due": "2027-02-26",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-004",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-26",
+    "next_due": "2027-02-26",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-003",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-02-27",
+    "next_due": "2027-02-27",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-022",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-03-01",
+    "next_due": "2027-02-28",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-021",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-02",
+    "next_due": "2027-03-02",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-013",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-04",
+    "next_due": "2027-03-04",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-036",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-06",
+    "next_due": "2027-03-06",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-040",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-06",
+    "next_due": "2027-03-06",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-008",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-08",
+    "next_due": "2027-03-08",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-024",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-09",
+    "next_due": "2027-03-09",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-025",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-03-13",
+    "next_due": "2027-03-12",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-017",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-12",
+    "next_due": "2027-03-12",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-035",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-13",
+    "next_due": "2027-03-13",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-019",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-15",
+    "next_due": "2027-03-15",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-025",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-03-18",
+    "next_due": "2027-03-17",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-009",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-18",
+    "next_due": "2027-03-18",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-010",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-18",
+    "next_due": "2027-03-18",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-019",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-18",
+    "next_due": "2027-03-18",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-009",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-19",
+    "next_due": "2027-03-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-026",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-20",
+    "next_due": "2027-03-20",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-020",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-21",
+    "next_due": "2027-03-21",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-003",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-03-22",
+    "next_due": "2027-03-21",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-005",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-03-23",
+    "next_due": "2027-03-22",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-015",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-27",
+    "next_due": "2027-03-27",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-039",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-27",
+    "next_due": "2027-03-27",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-005",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-28",
+    "next_due": "2027-03-28",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-008",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-30",
+    "next_due": "2027-03-30",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-014",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-03-31",
+    "next_due": "2027-03-31",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-025",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-02",
+    "next_due": "2027-04-02",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-018",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-02",
+    "next_due": "2027-04-02",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-019",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-07",
+    "next_due": "2027-04-07",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-021",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-08",
+    "next_due": "2027-04-08",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-002",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-09",
+    "next_due": "2027-04-09",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-009",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-04-10",
+    "next_due": "2027-04-09",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-011",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-10",
+    "next_due": "2027-04-10",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-WLG-024",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-04-11",
+    "next_due": "2027-04-10",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-004",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-11",
+    "next_due": "2027-04-11",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-018",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-15",
+    "next_due": "2027-04-15",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-005",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-16",
+    "next_due": "2027-04-16",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-035",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-18",
+    "next_due": "2027-04-18",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-020",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-19",
+    "next_due": "2027-04-19",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-025",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-19",
+    "next_due": "2027-04-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-025",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-22",
+    "next_due": "2027-04-22",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-002",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-23",
+    "next_due": "2027-04-23",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-018",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-23",
+    "next_due": "2027-04-23",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-026",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-25",
+    "next_due": "2027-04-25",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-010",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-26",
+    "next_due": "2027-04-26",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-036",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-28",
+    "next_due": "2027-04-28",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-022",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-28",
+    "next_due": "2027-04-28",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-SYD-013",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-04-30",
+    "next_due": "2027-04-30",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-005",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-02",
+    "next_due": "2027-05-02",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-008",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-04",
+    "next_due": "2027-05-04",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-018",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-06",
+    "next_due": "2027-05-06",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-011",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-07",
+    "next_due": "2027-05-07",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-WLG-014",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-07",
+    "next_due": "2027-05-07",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-001",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-08",
+    "next_due": "2027-05-08",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-005",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-08",
+    "next_due": "2027-05-08",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-020",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-09",
+    "next_due": "2027-05-09",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-SYD-005",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-10",
+    "next_due": "2027-05-10",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-025",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-10",
+    "next_due": "2027-05-10",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-020",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-11",
+    "next_due": "2027-05-11",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-013",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-12",
+    "next_due": "2027-05-12",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-030",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-13",
+    "next_due": "2027-05-13",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-019",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-17",
+    "next_due": "2027-05-17",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-001",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-17",
+    "next_due": "2027-05-17",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-015",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-17",
+    "next_due": "2027-05-17",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-028",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-19",
+    "next_due": "2027-05-19",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-034",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-23",
+    "next_due": "2027-05-23",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-SYD-015",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-25",
+    "next_due": "2027-05-25",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-003",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-29",
+    "next_due": "2027-05-29",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-017",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-31",
+    "next_due": "2027-05-31",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-WLG-022",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-05-31",
+    "next_due": "2027-05-31",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-018",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-02",
+    "next_due": "2027-06-02",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-006",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-02",
+    "next_due": "2027-06-02",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-011",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-05",
+    "next_due": "2027-06-05",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-012",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-07",
+    "next_due": "2027-06-07",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-009",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-08",
+    "next_due": "2027-06-08",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-012",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-08",
+    "next_due": "2027-06-08",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-013",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-09",
+    "next_due": "2027-06-09",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-016",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-10",
+    "next_due": "2027-06-10",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-012",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-16",
+    "next_due": "2027-06-16",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-021",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-18",
+    "next_due": "2027-06-18",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-013",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-19",
+    "next_due": "2027-06-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-038",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-20",
+    "next_due": "2027-06-20",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-020",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-20",
+    "next_due": "2027-06-20",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-015",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-21",
+    "next_due": "2027-06-21",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-WLG-018",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-21",
+    "next_due": "2027-06-21",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-018",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-22",
+    "next_due": "2027-06-22",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-015",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-22",
+    "next_due": "2027-06-22",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-010",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-23",
+    "next_due": "2027-06-23",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-038",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-24",
+    "next_due": "2027-06-24",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-019",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-25",
+    "next_due": "2027-06-25",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-011",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-27",
+    "next_due": "2027-06-27",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-MEL-008",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-28",
+    "next_due": "2027-06-28",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-028",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-30",
+    "next_due": "2027-06-30",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-032",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-30",
+    "next_due": "2027-06-30",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-001",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-30",
+    "next_due": "2027-06-30",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-011",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-06-30",
+    "next_due": "2027-06-30",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-006",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-01",
+    "next_due": "2027-07-01",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-004",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-02",
+    "next_due": "2027-07-02",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-009",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-14",
+    "next_due": "2027-07-14",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-007",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-07-16",
+    "next_due": "2027-07-15",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-009",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-15",
+    "next_due": "2027-07-15",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-022",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-16",
+    "next_due": "2027-07-16",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-008",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-17",
+    "next_due": "2027-07-17",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-017",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-17",
+    "next_due": "2027-07-17",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-040",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-18",
+    "next_due": "2027-07-18",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-007",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-19",
+    "next_due": "2027-07-19",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-SYD-002",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-07-21",
+    "next_due": "2027-07-20",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-018",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-23",
+    "next_due": "2027-07-23",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-031",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-24",
+    "next_due": "2027-07-24",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-024",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-24",
+    "next_due": "2027-07-24",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-017",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-25",
+    "next_due": "2027-07-25",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-027",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-25",
+    "next_due": "2027-07-25",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-004",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-07-28",
+    "next_due": "2027-07-28",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-001",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-01",
+    "next_due": "2027-08-01",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-023",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-08-03",
+    "next_due": "2027-08-02",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-026",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-03",
+    "next_due": "2027-08-03",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-010",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-05",
+    "next_due": "2027-08-05",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-020",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-05",
+    "next_due": "2027-08-05",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-037",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-06",
+    "next_due": "2027-08-06",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-007",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-06",
+    "next_due": "2027-08-06",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-015",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-07",
+    "next_due": "2027-08-07",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-009",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-07",
+    "next_due": "2027-08-07",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-039",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-08",
+    "next_due": "2027-08-08",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-010",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-09",
+    "next_due": "2027-08-09",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-005",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-12",
+    "next_due": "2027-08-12",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-023",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-12",
+    "next_due": "2027-08-12",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-029",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-16",
+    "next_due": "2027-08-16",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-014",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-21",
+    "next_due": "2027-08-21",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-017",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-22",
+    "next_due": "2027-08-22",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-WLG-013",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-22",
+    "next_due": "2027-08-22",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-006",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-08-25",
+    "next_due": "2027-08-24",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-010",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-24",
+    "next_due": "2027-08-24",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-004",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-26",
+    "next_due": "2027-08-26",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-016",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-26",
+    "next_due": "2027-08-26",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-006",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-27",
+    "next_due": "2027-08-27",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-010",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-27",
+    "next_due": "2027-08-27",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-019",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-29",
+    "next_due": "2027-08-29",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-002",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-08-31",
+    "next_due": "2027-08-31",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-006",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-01",
+    "next_due": "2027-09-01",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-021",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-02",
+    "next_due": "2027-09-02",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-025",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-09-04",
+    "next_due": "2027-09-03",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-034",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-04",
+    "next_due": "2027-09-04",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-005",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-09-07",
+    "next_due": "2027-09-06",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-019",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-09",
+    "next_due": "2027-09-09",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-012",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-11",
+    "next_due": "2027-09-11",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-MEL-024",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-13",
+    "next_due": "2027-09-13",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-023",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-15",
+    "next_due": "2027-09-15",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-009",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-16",
+    "next_due": "2027-09-16",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-MEL-021",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-16",
+    "next_due": "2027-09-16",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-022",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-16",
+    "next_due": "2027-09-16",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-SYD-028",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-17",
+    "next_due": "2027-09-17",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-004",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-19",
+    "next_due": "2027-09-19",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-016",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-19",
+    "next_due": "2027-09-19",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-025",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-19",
+    "next_due": "2027-09-19",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-002",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-19",
+    "next_due": "2027-09-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-022",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-20",
+    "next_due": "2027-09-20",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-AKL-020",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-21",
+    "next_due": "2027-09-21",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-MEL-007",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-22",
+    "next_due": "2027-09-22",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-028",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-09-26",
+    "next_due": "2027-09-25",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-030",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-09-26",
+    "next_due": "2027-09-26",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-022",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-03",
+    "next_due": "2027-10-03",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-003",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-07",
+    "next_due": "2027-10-07",
+    "certificate_status": "current",
+    "inspector_firm": "Vertex Lift Services"
+  },
+  {
+    "site_id": "HBL-SYD-006",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-08",
+    "next_due": "2027-10-08",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-012",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-08",
+    "next_due": "2027-10-08",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-032",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-09",
+    "next_due": "2027-10-09",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-017",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-11",
+    "next_due": "2027-10-11",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-007",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-12",
+    "next_due": "2027-10-12",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-003",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-13",
+    "next_due": "2027-10-13",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-014",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-13",
+    "next_due": "2027-10-13",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-MEL-014",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-10-19",
+    "next_due": "2027-10-18",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-005",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-18",
+    "next_due": "2027-10-18",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-WLG-003",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-20",
+    "next_due": "2027-10-20",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-022",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-22",
+    "next_due": "2027-10-22",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-002",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-22",
+    "next_due": "2027-10-22",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-027",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-28",
+    "next_due": "2027-10-28",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-014",
+    "system": "fire",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-29",
+    "next_due": "2027-10-29",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-037",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-10-31",
+    "next_due": "2027-10-30",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-008",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-10-31",
+    "next_due": "2027-10-31",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-012",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-11-01",
+    "next_due": "2027-11-01",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-AKL-031",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-11-09",
+    "next_due": "2027-11-09",
+    "certificate_status": "current",
+    "inspector_firm": "Harbourline Field Team"
+  },
+  {
+    "site_id": "HBL-AKL-033",
+    "system": "lift",
+    "kind": "annual_certificate",
+    "last_completed": "2026-11-10",
+    "next_due": "2027-11-10",
+    "certificate_status": "current",
+    "inspector_firm": "Southern Vertical"
+  },
+  {
+    "site_id": "HBL-WLG-001",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-11-14",
+    "next_due": "2027-11-13",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-015",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-11-25",
+    "next_due": "2027-11-24",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-036",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-12-05",
+    "next_due": "2027-12-04",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-012",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-12-06",
+    "next_due": "2027-12-05",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-011",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-12-08",
+    "next_due": "2027-12-07",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-007",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-12-10",
+    "next_due": "2027-12-09",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-018",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2022-12-19",
+    "next_due": "2027-12-18",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-021",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-01-25",
+    "next_due": "2028-01-24",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-023",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-02-14",
+    "next_due": "2028-02-13",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-017",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-02-20",
+    "next_due": "2028-02-19",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-039",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-03-11",
+    "next_due": "2028-03-09",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-004",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-05-09",
+    "next_due": "2028-05-07",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-023",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-06-06",
+    "next_due": "2028-06-04",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-010",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-06-13",
+    "next_due": "2028-06-11",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-009",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-08-01",
+    "next_due": "2028-07-30",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-006",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-09-02",
+    "next_due": "2028-08-31",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-017",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-09-07",
+    "next_due": "2028-09-05",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-016",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-09-19",
+    "next_due": "2028-09-17",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-010",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-09-24",
+    "next_due": "2028-09-22",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-013",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-10-09",
+    "next_due": "2028-10-07",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-010",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-10-19",
+    "next_due": "2028-10-17",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-002",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-10-29",
+    "next_due": "2028-10-27",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-022",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-11-04",
+    "next_due": "2028-11-02",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-034",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-11-09",
+    "next_due": "2028-11-07",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-013",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-11-13",
+    "next_due": "2028-11-11",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-019",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-11-22",
+    "next_due": "2028-11-20",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-005",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-12-02",
+    "next_due": "2028-11-30",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-020",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-12-17",
+    "next_due": "2028-12-15",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-024",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2023-12-29",
+    "next_due": "2028-12-27",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-035",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-01-15",
+    "next_due": "2029-01-13",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-021",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-03-01",
+    "next_due": "2029-02-28",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-015",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-03-18",
+    "next_due": "2029-03-17",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-021",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-03-19",
+    "next_due": "2029-03-18",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-020",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-04-06",
+    "next_due": "2029-04-05",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-030",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-04-10",
+    "next_due": "2029-04-09",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-022",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-05-07",
+    "next_due": "2029-05-06",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-009",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-05-10",
+    "next_due": "2029-05-09",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-011",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-05-16",
+    "next_due": "2029-05-15",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-025",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-05-23",
+    "next_due": "2029-05-22",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-001",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-06-11",
+    "next_due": "2029-06-10",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-021",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-06-12",
+    "next_due": "2029-06-11",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-020",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-06-13",
+    "next_due": "2029-06-12",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-016",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-06-23",
+    "next_due": "2029-06-22",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-001",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-07-11",
+    "next_due": "2029-07-10",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-016",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-07-22",
+    "next_due": "2029-07-21",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-004",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-07-26",
+    "next_due": "2029-07-25",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-002",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-08-04",
+    "next_due": "2029-08-03",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-016",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-08-23",
+    "next_due": "2029-08-22",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-005",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-08-25",
+    "next_due": "2029-08-24",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-003",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-10-19",
+    "next_due": "2029-10-18",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-011",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-11-03",
+    "next_due": "2029-11-02",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-026",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-11-11",
+    "next_due": "2029-11-10",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-019",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-11-23",
+    "next_due": "2029-11-22",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-029",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2024-12-06",
+    "next_due": "2029-12-05",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-032",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-02-05",
+    "next_due": "2030-02-04",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-002",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-02-27",
+    "next_due": "2030-02-26",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-033",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-03-17",
+    "next_due": "2030-03-16",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-017",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-03-29",
+    "next_due": "2030-03-28",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-024",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-03-30",
+    "next_due": "2030-03-29",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-007",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-04-05",
+    "next_due": "2030-04-04",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-015",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-04-26",
+    "next_due": "2030-04-25",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-MEL-004",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-05-14",
+    "next_due": "2030-05-13",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-013",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-05-17",
+    "next_due": "2030-05-16",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-017",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-05-17",
+    "next_due": "2030-05-16",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-029",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-05-24",
+    "next_due": "2030-05-23",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-003",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-05-29",
+    "next_due": "2030-05-28",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-014",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-06-20",
+    "next_due": "2030-06-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-006",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-06-20",
+    "next_due": "2030-06-19",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-038",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-07-17",
+    "next_due": "2030-07-16",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-028",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-08-07",
+    "next_due": "2030-08-06",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-008",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-08-07",
+    "next_due": "2030-08-06",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-024",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-08-20",
+    "next_due": "2030-08-19",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-010",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-08-27",
+    "next_due": "2030-08-26",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-030",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-09-25",
+    "next_due": "2030-09-24",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-031",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-10-16",
+    "next_due": "2030-10-15",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-019",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-10-20",
+    "next_due": "2030-10-19",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-019",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-10-30",
+    "next_due": "2030-10-29",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-027",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-11-13",
+    "next_due": "2030-11-12",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-AKL-018",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-11-25",
+    "next_due": "2030-11-24",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-014",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-11-30",
+    "next_due": "2030-11-29",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-014",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2025-12-16",
+    "next_due": "2030-12-15",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-006",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-01-05",
+    "next_due": "2031-01-04",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-013",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-01-09",
+    "next_due": "2031-01-08",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-022",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-01-09",
+    "next_due": "2031-01-08",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-008",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-03-01",
+    "next_due": "2031-02-28",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-011",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-03-08",
+    "next_due": "2031-03-07",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-012",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-04-06",
+    "next_due": "2031-04-05",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-SYD-026",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-04-09",
+    "next_due": "2031-04-08",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-SYD-018",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-04-24",
+    "next_due": "2031-04-23",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-WLG-018",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-04-28",
+    "next_due": "2031-04-27",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-AKL-012",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-05-02",
+    "next_due": "2031-05-01",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  },
+  {
+    "site_id": "HBL-WLG-020",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-05-04",
+    "next_due": "2031-05-03",
+    "certificate_status": "current",
+    "inspector_firm": "Coastline Compliance Inspectors"
+  },
+  {
+    "site_id": "HBL-MEL-001",
+    "system": "fire",
+    "kind": "five_yearly_sprinkler_test",
+    "last_completed": "2026-05-29",
+    "next_due": "2031-05-28",
+    "certificate_status": "current",
+    "inspector_firm": "Beacon Fire Systems"
+  }
+]

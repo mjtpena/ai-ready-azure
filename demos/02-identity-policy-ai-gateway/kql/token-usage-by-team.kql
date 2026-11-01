@@ -1,0 +1,20 @@
+// Token usage by team, 5-minute buckets (Application Insights -> Logs). Window is a day so the rehearsal and the
+// break-time smoke test are both in range (ingestion lags a few minutes).
+// Source: llm-emit-token-metric in apim/policies/all.xml. Each <dimension name="..."> becomes a customDimensions key.
+// Metric names emitted by the policy: "Prompt Tokens", "Completion Tokens", "Total Tokens".
+customMetrics
+| where timestamp > ago(1d)
+| where name in ("Prompt Tokens", "Completion Tokens", "Total Tokens")
+| extend team = tostring(customDimensions["Team"]),
+         subscriptionId = tostring(customDimensions["Subscription ID"]),
+         apiId = tostring(customDimensions["API ID"]),
+         clientIp = tostring(customDimensions["Client IP"])
+| summarize tokens = sum(value) by team, subscriptionId, name, bin(timestamp, 5m)
+| order by timestamp desc, team asc, name asc
+
+// Variant for the slide: total tokens per team over the demo window, one row per team.
+// customMetrics
+// | where timestamp > ago(1d) and name == "Total Tokens"
+// | extend team = tostring(customDimensions["Team"])
+// | summarize totalTokens = sum(value), calls = sum(valueCount) by team
+// | order by totalTokens desc

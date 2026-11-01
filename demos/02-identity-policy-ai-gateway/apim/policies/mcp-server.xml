@@ -1,0 +1,45 @@
+<!--
+  Policy on the MCP server hbl-site-tools (infra/modules/mcp.bicep loads this file). The same front door as the models:
+  an Entra ID token from our tenant is mandatory, the caller's identity is the budget key, calls are metered, and the
+  backend credential (the Functions key held in a named value) is added here, so no client ever holds it.
+  rate-limit-by-key is a REQUEST budget (tools are not metered in tokens): 30 calls per caller per minute, 429 beyond.
+-->
+<policies>
+    <inbound>
+        <base />
+        <validate-azure-ad-token tenant-id="{{tenant-id}}" header-name="Authorization"
+            failed-validation-httpcode="401"
+            failed-validation-error-message="Unauthorized. Present an Entra ID bearer token for the Harbourline AI gateway."
+            output-token-variable-name="callerJwt">
+            <audiences>
+                <audience>{{entra-audience}}</audience>
+            </audiences>
+        </validate-azure-ad-token>
+        <set-variable name="caller" value="@(((Jwt)context.Variables["callerJwt"]).Claims.GetValueOrDefault("oid", context.Subscription?.Id ?? "anonymous"))" />
+        <set-variable name="team" value="@(context.Request.Headers.GetValueOrDefault("x-team", context.Subscription?.Name ?? "unknown"))" />
+        <rate-limit-by-key calls="30" renewal-period="60" counter-key="@((string)context.Variables["caller"])"
+            remaining-calls-header-name="x-remaining-calls" retry-after-header-name="Retry-After" />
+        <emit-metric name="mcp-tool-calls" namespace="hbl-ai-gateway" value="1">
+            <dimension name="Team" value="@((string)context.Variables["team"])" />
+            <dimension name="API ID" value="@(context.Api.Id)" />
+        </emit-metric>
+        <set-header name="x-functions-key" exists-action="override">
+            <value>{{site-api-key}}</value>
+        </set-header>
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <base />
+        <set-header name="x-hbl-gateway" exists-action="override">
+            <value>@("apim/" + context.Deployment.Region)</value>
+        </set-header>
+    </outbound>
+    <on-error>
+        <base />
+        <set-header name="x-hbl-gateway" exists-action="override">
+            <value>@("apim/" + context.Deployment.Region)</value>
+        </set-header>
+    </on-error>
+</policies>

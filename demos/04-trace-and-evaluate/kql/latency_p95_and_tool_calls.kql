@@ -1,0 +1,34 @@
+// Latency percentiles per operation and function-tool call counts for the Site Operations Advisor agent.
+// Run in Application Insights > Logs.
+let window = 7d;
+let spans = dependencies
+    | where timestamp > ago(window)
+    | where isnotempty(customDimensions["gen_ai.operation.name"]) or name == "hbl.site_ops_advisor.demo"
+    | extend operation = tostring(customDimensions["gen_ai.operation.name"]),
+             tool      = tostring(customDimensions["gen_ai.tool.name"]);
+// 1. Latency per span name (model calls, agent invocations and the end-to-end demo span)
+spans
+| where operation in ("chat", "invoke_agent", "responses") or name == "hbl.site_ops_advisor.demo"
+| summarize calls = count(),
+            p50_ms = round(percentile(duration, 50), 0),
+            p95_ms = round(percentile(duration, 95), 0),
+            max_ms = round(max(duration), 0),
+            errors = countif(success == false)
+    by name
+| order by p95_ms desc;
+// 2. Which telemetry tools the agent called, how often, and how long they took locally
+spans
+| where operation == "execute_tool"
+| summarize calls = count(),
+            avg_ms = round(avg(duration), 1),
+            tool_errors = countif(tostring(customDimensions["hbl.tool.error"]) == "True")
+    by tool
+| order by calls desc;
+// 3. Tool calls per question over time (uses the parent span's counter attribute)
+dependencies
+| where timestamp > ago(window) and name == "hbl.site_ops_advisor.demo"
+| extend question_id = tostring(customDimensions["hbl.question_id"]),
+         region = tostring(customDimensions["hbl.region"]),
+         tool_calls = toint(customDimensions["hbl.tool_call_count"])
+| summarize runs = count(), avg_tool_calls = avg(tool_calls), p95_ms = percentile(duration, 95) by question_id, region
+| order by question_id asc

@@ -1,0 +1,37 @@
+<!--
+  Building block 5 (OPTIONAL, not deployed by default): semantic caching.
+  llm-semantic-cache-lookup / llm-semantic-cache-store (the AI-Gateway labs still show the older names
+  azure-openai-semantic-cache-lookup / azure-openai-semantic-cache-store, which remain as aliases).
+  A repeated or near-identical advisor question is answered from cache: no model call, no tokens, ~ms latency.
+
+  Prerequisites before adding this block to all.xml:
+    1. Azure Managed Redis (Microsoft.Cache/redisEnterprise, Balanced B0 is enough for a demo) with RediSearch module.
+    2. APIM external cache (Microsoft.ApiManagement/service/caches) pointing at that Redis, use-from = the gateway region.
+    3. An embeddings deployment on the Foundry account (e.g. text-embedding-3-small) and an APIM backend
+       "embeddings-backend" whose URL is
+       https://<account>.openai.azure.com/openai/deployments/text-embedding-3-small/embeddings
+       Set embeddings-backend-auth="system-assigned" so the APIM managed identity is used (no key).
+  Place the lookup in <inbound> before set-backend-service and the store in <outbound>.
+  Cost note: Managed Redis bills hourly; delete it with the resource group.
+-->
+<policies>
+    <inbound>
+        <base />
+        <!-- Vary the cache by the APIM subscription so one team never receives another team's cached answer. -->
+        <llm-semantic-cache-lookup score-threshold="0.85" embeddings-backend-id="embeddings-backend" embeddings-backend-auth="system-assigned">
+            <vary-by>@(context.Subscription?.Id ?? "anonymous")</vary-by>
+        </llm-semantic-cache-lookup>
+        <set-backend-service backend-id="foundry-backend" />
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <!-- Keep answers for 2 minutes so a rehearsal and the live run do not collide. -->
+        <llm-semantic-cache-store duration="120" />
+        <base />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>

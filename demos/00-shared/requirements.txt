@@ -1,0 +1,10 @@
+# Shared by demos/03-grounded-foundry-agent and demos/04-trace-and-evaluate.
+# Versions pinned where the API surface matters (checked against PyPI 15 Oct 2026, see docs/SCENARIO.md).
+azure-ai-projects==2.8.0
+azure-ai-evaluation==1.18.9
+azure-identity>=1.26.0
+azure-search-documents==12.0.0
+azure-monitor-opentelemetry>=1.8.11
+openai>=3.0.0
+python-dotenv>=1.0.0
+opentelemetry-sdk>=1.30.0

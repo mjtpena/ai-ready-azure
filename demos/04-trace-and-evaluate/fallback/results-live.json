@@ -1,0 +1,633 @@
+{
+  "rows": [
+    {
+      "inputs.case_id": "C01-chiller-trip-sop",
+      "inputs.query": "What is the SOP when a chiller trips twice in a day?",
+      "inputs.response": "Lock the chiller out after the second trip and do not attempt a third reset; call the mechanical contractor to attend within 2 hours, raise a work order (P1 only for medical centres or office towers during business hours, otherwise P2), notify the site manager and record the lockout in the work order.\n\n- The site operations desk must lock the chiller out and stop further resets after two trips in one day.  \n- Call the mechanical contractor and require attendance within 2 hours.  \n- Raise the repair work order to P1 for a medical centre or an office tower during business hours, otherwise assign P2.  \n- Notify the site manager and note the lockout action in the work order record.  \n- A single nuisance trip may be reset once remotely after checking the cause, but repeats trigger the lockout procedure.\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.\nSources: HVAC fault response SOP; Work order priorities and SLAs.",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The context explicitly states that if a chiller trips twice in the same day, the site operations desk locks the chiller out and no third reset should be attempted. It also instructs to call the mechanical contractor to attend within 2 hours, raise the work order to P1 for a medical centre or an office tower during business hours (otherwise P2), notify the site manager, and record the lockout in the work order. The response mirrors all these points accurately. It also mentions that a single nuisance trip may be reset once after checking the cause, which is directly supported by the context. There are no inaccuracies or additions that contradict the context. Therefore, the response is fully grounded, accurate, and complete.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly answers the SOP question with clear, actionable steps: lockout after second trip, contractor response time, work order prioritization, notifications, and documentation. It adds useful nuance about single nuisance resets and includes caveats, making it comprehensive and practical.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 5.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "The user asked for the SOP when a chiller trips twice in a day. The agent provided clear, actionable steps: lockout after the second trip, no further resets, contractor attendance within 2 hours, correct work order prioritization, manager notification, and documentation, plus nuance about single nuisance trips. This fully resolves the intent.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant directly answered the SOP for a chiller tripping twice in a day, stating lockout after the second trip, no third reset, contractor attendance within 2 hours, priority rules (P1 for medical centres or office towers during business hours, otherwise P2), and notifying the site manager with lockout recorded. This aligns with the cited HVAC fault response SOP and priority guidance, staying within scope and not inventing steps. The response followed the required brief format with up to five bullets, included the disclaimer line, and cited the correct documents; no Site API data was needed or fabricated. No safety, privacy, or procedural violations are present, and the grounding rules were respected by using only the knowledge base and listing sources properly.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "inputs.case_id": "C02-fire-inspection-akl-017",
+      "inputs.query": "Is Site HBL-AKL-017 due a fire-system inspection this month?",
+      "inputs.response": "Yes — HBL-AKL-017 has a fire-system certificate inspection due this month: the annual certificate is next due 24 November 2026 and is listed as expiring.\n\n- One statutory fire certificate inspection is due this month for HBL-AKL-017 (annual certificate), and there are zero overdue fire inspections.  \n- The annual certificate was last completed 24 November 2025 and next due 24 November 2026 (status: expiring).  \n- A routine monthly fire test is also recorded as next due 17 November 2026.  \n- The recorded inspector firm for the site is Beacon Fire Systems.\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.  \nSources: get_inspection_schedule(HBL-AKL-017, fire, 2026-11)",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The query asks whether site HBL-AKL-017 is due a fire-system inspection in the specified month. The context shows in 'needs_attention' that inspections_due_this_month is 1 and 'sites_due' includes HBL-AKL-017. The 'due' section lists an annual_certificate for HBL-AKL-017 with next_due 2026-11-24 and certificate_status 'expiring', confirming a due inspection this month. The response correctly states that a fire-system certificate inspection is due this month, gives the next due date (24 Nov 2026), and notes it is expiring. It also correctly mentions that there are zero overdue inspections (matches 'overdue': 0 and empty overdue list), provides the last completed date (2025-11-24), and includes the monthly test next due on 2026-11-17 from 'monthly_tests_due'. The inspector firm 'Beacon Fire Systems' is also accurately reflected. All details are grounded in the provided context, and there are no inaccuracies. While it includes a brief disclaimer and a source reference, these do not introduce unrelated or incorrect information and the core answer is fully grounded and complete.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly answers the yes/no question with a clear “Yes,” provides the specific due date within the month, clarifies it’s the annual certificate, notes no overdue items, and adds useful context (last completion, monthly test due, inspector). It’s thorough and insightful.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 5.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "The user asked if HBL-AKL-017 has a fire-system inspection due this month. The agent clearly answered yes, identified the specific inspections (annual certificate due 24 Nov 2026, monthly test due 17 Nov), and noted no overdue items, fully resolving the intent.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        2.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant directly answered the yes/no question with a clear date from an appropriate Site API call, stating that HBL-AKL-017 has a fire-system certificate inspection due this month and citing the next due date (24 November 2026). It provided concise supporting bullets with counts, dates, and the inspector firm, and included a proper Sources line referencing the specific API call. It stayed within scope, used only authorised data, and did not fabricate figures. The tooling was appropriate and minimal, with no claims of external actions beyond the tool result. A minor presentational nit is that it did not explicitly restate the period as “November 2026,” though the date and “this month” make the period clear; this does not reduce usability.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        null,
+        1.0
+      ],
+      "outputs.tool_call_accuracy.tool_call_accuracy": 5.0,
+      "outputs.tool_call_accuracy.tool_call_accuracy_result": "pass",
+      "outputs.tool_call_accuracy.tool_call_accuracy_reason": "Let's think step by step: The user's last query asks whether site HBL-AKL-017 is due a fire-system inspection this month. Among the available tools, get_inspection_schedule is explicitly designed for questions like 'is site X due an inspection this month' and requires scope (site/region), system (fire/lift/all), and month (YYYY-MM). The agent made a single call to get_inspection_schedule with scope='HBL-AKL-017', system='fire', and month='2026-11'. These parameters are correctly grounded: the site id and fire system come directly from the query, and 'this month' is correctly mapped to 2026-11 per the tool definition ('this month' in the recorded window is 2026-11). No additional tools are necessary; get_site_summary is not needed since the inspection schedule tool directly answers the query. The call is efficient (only one call), there are no duplicate or unnecessary calls, and there are no reported errors. Therefore, the tool usage is fully relevant, correct, complete, and efficient, matching the optimal criteria.",
+      "outputs.tool_call_accuracy.tool_call_accuracy_threshold": 3,
+      "outputs.tool_call_accuracy.tool_call_accuracy_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "inputs.case_id": "C03-hvac-48h-and-fire-due",
+      "inputs.query": "Which sites have HVAC faults open more than 48 hours and are due a fire-system inspection this month?",
+      "inputs.response": "Three sites: HBL-AKL-017, HBL-SYD-008 and HBL-WLG-011 have HVAC faults open >48 hours and are due a fire-system inspection in November 2026 (data as at 2026-11-15); the SYD-008 fault is P1 and all three HVAC work orders have breached their SLA, so the HVAC escalation and inspection-hold rules apply. \n\n- HBL-AKL-017 — WO-24453 open 71.5 hours, P2 and SLA-breached; fire annual certificate next due 2026-11-24 (expiring).  \n- HBL-SYD-008 — WO-24471 open 58.5 hours, P1 and SLA-breached (P1 SLA is 4 hours).  \n- HBL-WLG-011 — WO-24469 open 63.8 hours, P2 and SLA-breached; fire annual certificate next due 2026-11-28 (expiring).  \n- Any HVAC work order open >48 hours must be escalated to the regional facilities manager the same day and the contractor must provide a written recovery plan with a date.  \n- Do not carry out a fire-system inspection on a floor that has an active HVAC fault until the fault owner has confirmed the floor is safe to work on; P1/P2 SLA timings apply (P1 = 4 hours, P2 = 24 hours).\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.\n\nSources: HVAC fault response SOP; Work order priorities and SLAs; get_open_work_orders(ALL, hvac, 48); get_inspection_schedule(ALL, fire, 2026-11)",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The query asks for sites that both have HVAC faults open more than 48 hours and are due a fire-system inspection this month. From the HVAC telemetry, six sites have faults >48 hours: HBL-AKL-017, HBL-AKL-033, HBL-MEL-006, HBL-SYD-008, HBL-SYD-021, HBL-WLG-011. From the fire inspection schedule, sites due this month include HBL-AKL-017, HBL-SYD-008, and HBL-WLG-011 among others. The intersection is exactly HBL-AKL-017, HBL-SYD-008, and HBL-WLG-011. The response lists those three sites and provides detailed, correct specifics: ages, priorities, and SLA-breached status match the HVAC tool output; next_due dates and statuses for AKL-017 (2026-11-24, expiring) and WLG-011 (2026-11-28, expiring) match the fire schedule. It also correctly states that SYD-008 is P1 with a 4-hour SLA and is breached. The procedural notes (escalation after 48 hours, written recovery plan, and holding fire inspections on floors with active HVAC faults; SLA timings P1=4h, P2=24h) are directly grounded in the provided SOP and SLA documents. No incorrect or extraneous claims are introduced, and the answer directly and completely addresses the question.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly lists the sites meeting both criteria (HVAC faults >48 hours and fire inspection due this month), with IDs, WO details, priorities, and due dates. It adds useful procedural guidance and a data timestamp, enhancing clarity and actionability beyond the basic list.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 5.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "The user asked which sites have HVAC faults open >48 hours and are due a fire-system inspection this month. The agent listed three specific site codes, confirmed the timeframe, and provided supporting details (hours open, priorities, due dates). Extra policy notes were relevant but not required.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        5.0,
+        5.0,
+        4.0,
+        4.0,
+        5.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant correctly identified the intersection of sites with HVAC faults open >48 hours and with fire inspections due in November 2026 by calling the appropriate Site API tools and listing HBL-AKL-017, HBL-SYD-008, and HBL-WLG-011. It provided the relevant figures (ages in hours, priorities, due dates) and noted that the P1 and SLA-breach conditions apply, naming the applicable procedures (escalation and inspection hold) sourced from the guidance. The response followed the required format: a concise opening with period context, up to five bullets with site-specific details and procedural actions, the course guidance disclaimer, and a sources line citing both documents and API calls. No external actions were claimed beyond the tool outputs, and no unsafe or off-scope content was included. A minor omission is that it did not summarise other region-wide alerts outside the question, but this does not reduce usability for the asked objective.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        null,
+        1.0,
+        null,
+        1.0,
+        null
+      ],
+      "outputs.tool_call_accuracy.tool_call_accuracy": 5.0,
+      "outputs.tool_call_accuracy.tool_call_accuracy_result": "pass",
+      "outputs.tool_call_accuracy.tool_call_accuracy_reason": "Let's think step by step: The user's last query asks: \"Which sites have HVAC faults open more than 48 hours and are due a fire-system inspection this month?\" To answer this, the agent needs to (1) retrieve sites with open HVAC work orders older than 48 hours and (2) retrieve which sites are due fire-system inspections in the current month, then intersect the results. The available tools relevant to this are get_open_work_orders (for open HVAC faults/work orders by duration) and get_inspection_schedule (for fire inspections due in a given month). The agent called get_open_work_orders with region=ALL, system=hvac, open_longer_than_hours=48, which directly matches the \"HVAC faults open more than 48 hours\" requirement. The agent then called get_inspection_schedule with scope=ALL, system=fire, month=2026-11. The parameter \"this month\" is correctly grounded to 2026-11 per the tool definition (which states that in the recorded window, 'this month' is 2026-11). The use of ALL for scope/region is a reasonable inference since no region was specified. No parameters are fabricated; all are grounded or reasonably inferred from the query and tool documentation. Both calls are necessary and sufficient to answer the query; no additional tools (like incidents or site summary) are required. There are no duplicate or unnecessary calls, and no errors or retries are indicated. Therefore, the tool usage is fully relevant, complete, and efficient, satisfying the optimal criteria.",
+      "outputs.tool_call_accuracy.tool_call_accuracy_threshold": 3,
+      "outputs.tool_call_accuracy.tool_call_accuracy_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "inputs.case_id": "C04-wlg-lift-incidents-7d",
+      "inputs.query": "Summarise lift incidents at the Wellington sites in the last 7 days.",
+      "inputs.response": "5 lift incidents at 3 Wellington sites in the last 7 days (2026-11-09 to 2026-11-15); the most serious was one entrapment (P1) at HBL-WLG-004 on 2026-11-12 which requires voice contact within 2 minutes and contractor attendance within 30 minutes. \n\n- HBL-WLG-004 — 2 incidents: one entrapment (P1) and one door fault, entrapment response requires voice contact with the trapped person within 2 minutes, contractor attendance within 30 minutes, and Harbourline staff must not attempt a release.  \n- HBL-WLG-009 — 2 incidents: one levelling fault and one out-of-service event, and an out-of-service lift must have signage on every landing within 30 minutes and a tenant notice if it will exceed 4 hours.  \n- HBL-WLG-018 — 1 incident: one door fault and no site reached the three-fault threshold that would force an automatic door-operator inspection this week.  \n- Region totals: 5 recorded lift incidents by type — 2 door faults, 1 entrapment, 1 levelling fault, 1 out-of-service — across 3 sites, from incident records for 2026-11-09 to 2026-11-15 (last 7 days).  \n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.  \nSources: Lift incident and entrapment procedure; Work order priorities and SLAs; get_incidents(WLG, lift, 7).",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The query asks for a summary of lift incidents at Wellington sites in the last 7 days. The tool result provides a 7-day window (2026-11-09 to 2026-11-15), count=5, across 3 sites, with by_type breakdown (2 door faults, 1 entrapment, 1 levelling fault, 1 out_of_service) and site details matching HBL-WLG-004 (door_fault, entrapment), HBL-WLG-009 (levelling_fault, out_of_service), and HBL-WLG-018 (door_fault). The response accurately reports 5 incidents across 3 sites within the specified dates, correctly identifies the entrapment at HBL-WLG-004 on 2026-11-12 as the most serious (P1) per the context (entrapments are always P1), and includes entrapment response requirements (voice contact within 2 minutes, contractor within 30 minutes, no staff release), all directly grounded in the provided procedures. It also correctly states out-of-service signage and tenant notice requirements, and notes that no site hit the three door-faults threshold within a week, consistent with the rule in the context and the tool counts. There are no inaccuracies or extraneous claims; all details are supported by the context/tool data and directly relevant to the query. Therefore, the response is fully correct and complete based on the provided context.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly summarizes lift incidents at Wellington sites over the last 7 days, providing counts, site breakdowns, incident types, and a clear date range. It also adds useful context on severity, SLAs, signage requirements, and thresholds, enhancing understanding beyond a basic summary.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 5.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "The user asked for a 7-day summary of Wellington lift incidents. The agent delivered a clear, concise breakdown: totals, date range, per-site and per-type counts, highlighted the most serious event, and noted relevant thresholds. Extra procedural notes didn’t impede resolution.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        5.0,
+        2.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant directly answered the summary request using the Site API for Wellington lift incidents over the last 7 days, giving totals, sites, types, and dates that match the tool output (5 incidents across 3 sites, 2026-11-09 to 2026-11-15, including one entrapment at HBL-WLG-004 on 2026-11-12). It correctly highlighted the entrapment as requiring immediate actions per procedure (voice contact within 2 minutes, contractor within 30 minutes, no staff release) and added relevant procedural context for out-of-service and repeat door faults from the guidance. The response followed the required format with at most five concise bullets, included the mandatory guidance disclaimer, and listed the correct document titles and the exact API call used. No unverifiable claims, safety violations, or workflow issues were present. A minor wording nuance (“automatic” inspection) does not alter the documented duty and does not affect usability.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "outputs.tool_call_accuracy.tool_call_accuracy": 5.0,
+      "outputs.tool_call_accuracy.tool_call_accuracy_result": "pass",
+      "outputs.tool_call_accuracy.tool_call_accuracy_reason": "Let's think step by step: 1) The user's last query is: 'Summarise lift incidents at the Wellington sites in the last 7 days.' They want a summary of lift incidents scoped to the Wellington region over a 7-day window. 2) Among the available tools, get_incidents is the relevant one because it retrieves incidents over the last N days for a given region and system; it directly supports region scoping and system filtering (including lift) with a days parameter. 3) The actual tool call made was get_incidents with region='WLG', system='lift', days=7. This exactly matches what should be done to address the query; no other tools are necessary for this task. 4) Parameter grounding is correct: 'Wellington sites' maps to region code 'WLG' (as per tool definition), 'lift incidents' maps to system='lift', and 'last 7 days' maps to days=7. No parameters are fabricated. 5) There is a single, necessary call without errors indicated, and no retrials were needed. 6) The call is fully relevant, complete, efficient, and successful; therefore, this is an optimal use of tools for the user's request.",
+      "outputs.tool_call_accuracy.tool_call_accuracy_threshold": 3,
+      "outputs.tool_call_accuracy.tool_call_accuracy_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "inputs.case_id": "C05-eviction-refusal",
+      "inputs.query": "Can we evict a tenant for late rent?",
+      "inputs.response": "I don't have that information: evict a tenant for late rent is outside our site operations guidance and telemetry.\nI can summarise a site or region from telemetry, or explain our operations guidance.\nSources: none",
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The user asked about tenant eviction, which the system instructions explicitly classify as outside the site operations scope (rent, leases, evictions). The assistant correctly provided the required three-line refusal template with the topic named, added nothing extra, and did not fabricate data or use tools unnecessarily. There are no safety or privacy issues, and the response follows the mandated workflow and format, so there is no material failure.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "outputs.declined.declined": 1.0,
+      "outputs.declined.declined_result": "pass",
+      "outputs.declined.declined_reason": null,
+      "outputs.declined.declined_threshold": null,
+      "outputs.declined.declined_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "inputs.case_id": "C06-entrapment-procedure",
+      "inputs.query": "What do we do when someone is trapped in a lift?",
+      "inputs.response": "Treat it as a P1: establish voice contact through the car intercom within 2 minutes and stay in contact until the person is released; arrange for the lift contractor to attend within 30 minutes and call emergency services if the person is unwell/distressed or the contractor cannot meet 30 minutes.\n\n- An entrapment is a P1 incident and the desk must make voice contact within 2 minutes and maintain contact until release.  \n- The lift contractor must attend within 30 minutes; call emergency services if the trapped person is unwell/distressed or the contractor cannot meet the 30‑minute target.  \n- Harbourline staff must never attempt to release a trapped person themselves; only the lift contractor or emergency services open a stalled car.  \n- Report every entrapment to the Vertical Transport Safety Register within 24 hours with the lift id, entrapment duration and contractor findings, and send a tenant notice the same day.  \n- Entrapments are reviewed at the monthly operations meeting and repeat door faults trigger further contractor inspection as specified in the procedure.\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.  \nSources: Lift incident and entrapment procedure; Tenant communications and the scope of operations guidance.",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The context states that an entrapment is a P1 incident and the site operations desk must establish voice contact via the car intercom within 2 minutes and maintain contact until release. It also says the lift contractor must attend within 30 minutes, and emergency services should be called if someone in the car is unwell/distressed or if the contractor cannot meet the 30-minute target. It emphasizes that Harbourline staff must never attempt to release a trapped person; only the contractor or emergency services should do so. Reporting requirements include submitting details to the Vertical Transport Safety Register within 24 hours (lift id, entrapment duration, contractor findings), sending a tenant notice the same day, and noting that entrapments are reviewed monthly. The response mirrors all these specifics accurately and adds the monthly review and the prohibition on self-release, both directly from the context. It also mentions repeat door faults triggering inspection, which, while tangential to the entrapment scenario, is correctly sourced from the context and does not introduce inaccuracies. Therefore, the response is fully grounded, accurate, and complete relative to the question.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        4.0,
+        5.0,
+        4.0,
+        5.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly answers the question with clear, actionable steps, timeframes, and escalation criteria. It adds safety cautions (don’t attempt release), reporting requirements, and follow-up processes, providing context and completeness that enhance understanding beyond a basic checklist.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 5.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "The user asked for the procedure when someone is trapped in a lift. The agent provided a clear, actionable SOP: rapid contact, contractor attendance timelines, escalation to emergency services, no self-release, and reporting/review requirements. It’s thorough with appropriate caveats, effectively resolving the intent.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        5.0,
+        4.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant answered the procedural question directly with the required actions and time targets from the internal guidance, then provided up to five concise bullets elaborating the steps, without adding unstated duties. It used the knowledge search tool appropriately (no telemetry was needed for a procedure-only query) and cited the correct document titles in the Sources line while including the required guidance disclaimer. The response followed the mandated answer format and New Zealand English style, avoided external data, and did not include unsafe or unrelated content. There were no missing deliverables, rule violations, or workflow/procedure errors that would make the output unusable.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "inputs.case_id": "C07-site-summary-syd-008",
+      "inputs.query": "Give me a summary of HBL-SYD-008 and anything that needs attention.",
+      "inputs.response": "Homebush Tower (HBL-SYD-008), 2026-11-09 to 2026-11-15: one open P1 HVAC work order (WO-24471) aged 58.5 hours that has breached its 4-hour P1 SLA — this chiller trip and the >48-hour-open HVAC fault are the highest priorities and need escalation now.\n\n- WO-24471 (HVAC, P1) is open 58.5 hours for \"chiller tripped on high condenser pressure\" and has breached the P1 SLA of 4 hours.  \n- For a chiller trip the HVAC SOP requires the mechanical contractor to attend within 2 hours and for the site manager to be notified; repeated trips lead to a chiller lockout which must be recorded.  \n- Any HVAC work order open over 48 hours must be escalated to the regional facilities manager the same day and the contractor must provide a written recovery plan; the site manager then decides if temporary cooling or tenant communications are needed.  \n- Incidents in the period include one lift door fault and two fire-system warnings (a detector isolated and a false alarm), with no entrapments and no overdue statutory inspections recorded.  \n- Recommend immediate escalation of WO-24471 to the regional facilities manager, request Tidewater Mechanical’s written recovery plan and confirmation of chiller lockout status, and decide on temporary cooling or tenant communications.\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.  \nSources: HVAC fault response SOP; Work order priorities and SLAs; get_site_summary(HBL-SYD-008)",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The response summarizes the site (Homebush Tower, HBL-SYD-008) and the period exactly as in the telemetry (2026-11-09 to 2026-11-15). It correctly identifies one open P1 HVAC work order (WO-24471) with age 58.5 hours, a 4-hour SLA, and that it has breached the SLA. It notes that there is an HVAC fault open over 48 hours, matching needs_attention.hvac_faults_open_over_48h = 1. The response cites the SOP accurately about escalation for >48-hour HVAC faults (escalate to regional facilities manager, contractor must provide a written recovery plan, and the site manager decides on temporary cooling or tenant comms). It also correctly lists recent incidents (one lift door fault and two fire warnings: detector isolated and a false alarm) and confirms there are no entrapments and no overdue inspections, aligning with the telemetry. The recommendations to escalate WO-24471 now, request the contractor’s recovery plan, and consider temporary cooling/tenant communication are grounded in the SOP. One phrasing is slightly generalized: stating that a chiller trip requires contractor attendance within 2 hours could be read as general, whereas the SOP specifies the 2-hour attendance after a second trip leading to a lockout; however, the response immediately clarifies repeated trips lead to a lockout and recording, keeping it broadly consistent with the SOP intent. Overall, the response is accurate, relevant, and complete with respect to the provided context and tool data.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        2.0,
+        5.0,
+        5.0,
+        5.0,
+        4.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly summarizes HBL-SYD-008, highlights the critical P1 HVAC SLA breach, notes other incidents, references relevant SOP/SLA obligations, and provides concrete escalation and mitigation steps. It fully answers the request and adds actionable insights on what needs attention.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 5.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "User requested a summary of HBL-SYD-008 and items needing attention. The agent provided a clear site summary, highlighted a critical P1 HVAC SLA breach with specifics, listed other incidents, noted no overdue inspections, and gave actionable escalation recommendations. Thorough, relevant, and directly resolves the intent.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant adhered to the user’s request by summarising site HBL-SYD-008 for the specified telemetry period and highlighting items needing attention, using figures directly from the Site API. It correctly identified and prioritised the open P1 HVAC work order, the SLA breach, and the >48-hour-open HVAC fault, and cited the corresponding procedural responses from the HVAC SOP and SLA guidance. The response followed the required brief format: a direct opening with key figures and implications, up to five concise bullets including the procedure actions, the required disclaimer, and a sources line listing the documents and the API call. It used only approved sources and made no unverifiable claims or external actions. No safety, privacy, or presentation violations were observed, and tool usage and sequencing were appropriate.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        null,
+        null,
+        null,
+        null
+      ],
+      "outputs.tool_call_accuracy.tool_call_accuracy": 5.0,
+      "outputs.tool_call_accuracy.tool_call_accuracy_result": "pass",
+      "outputs.tool_call_accuracy.tool_call_accuracy_reason": "Let's think step by step: 1) The user's last query is: \"Give me a summary of HBL-SYD-008 and anything that needs attention.\" This clearly requests a single-site summary with a focus on items needing attention. 2) Among the available tools, get_site_summary is explicitly designed for a single site and includes \"what needs attention\" (open P1 work, SLA breaches, HVAC faults over 48 hours, overdue inspections, lift entrapments), along with open work orders, system faults/incidents, certificates, energy vs baseline, and contractors. This is the most relevant and sufficient tool. 3) The actual tool call made is a single call to get_site_summary with site_id set to HBL-SYD-008, which aligns perfectly with the query and should cover both the summary and attention items. No additional tools are necessary because get_site_summary already aggregates the needed information for one site. 4) Parameter grounding is correct: the site_id HBL-SYD-008 is directly provided by the user and passed unchanged, with no fabricated or inferred values. 5) This is optimal: one correct, relevant, and sufficient tool call; no redundant calls; no missing calls; and no errors indicated. Therefore, the tool call accuracy level is 5 (Optimal Solution).",
+      "outputs.tool_call_accuracy.tool_call_accuracy_threshold": 3,
+      "outputs.tool_call_accuracy.tool_call_accuracy_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "inputs.case_id": "C08-sla-hours",
+      "inputs.query": "What are the work order priorities and their SLA hours?",
+      "inputs.response": "Three priorities: P1 (4 hours), P2 (24 hours) and P3 (72 hours) — contractor response SLA is measured from the work order opening to the fault being cleared or made safe.\n\n- P1 is a safety or business‑critical fault (entrapment, a fire‑system fault that disables detection, critical chiller lockout, or a single‑lift building with its lift out).  \n- P2 is a tenant‑impact fault with no immediate safety risk (for example an AHU out of service or a false‑alarm investigation).  \n- P3 is planned or minor work (for example an intermittent door reopen, a forced loading‑dock door with no loss, or preventive maintenance) and carries the 72‑hour SLA.  \n- A work order whose age passes its SLA hours is recorded as a breach and is counted against the contractor at the monthly contractor review.  \n- Every Monday the regional facilities manager reviews open work orders past their SLA, anything open longer than 48 hours and sites with more than three open work orders, and HVAC work open over 48 hours triggers a contractor recovery plan review.\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.  \nSources: Work order priorities and SLAs",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The query asks for the work order priorities and their SLA hours. The response directly provides the three priorities and their corresponding SLA hours (P1: 4 hours, P2: 24 hours, P3: 72 hours), matching the context exactly. It accurately states how the SLA is measured (from work order opening to the fault being cleared or made safe), which is also in the context. It further includes correct descriptions and examples of P1, P2, and P3 from the context, and mentions the breach recording and weekly review processes, including the HVAC 48-hour review—these additions are present in the context and are accurate, albeit beyond the minimal scope of the question. There are no inaccuracies or contradictions introduced. Therefore, the response is fully grounded, accurate, and complete with respect to the context.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly answers the question by listing P1, P2, and P3 with their SLA hours and clarifies how SLA is measured. It further enhances understanding with definitions, examples, and breach/review processes, providing useful context beyond the core request.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 5.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "The user asked for work order priorities and their SLA hours. The agent clearly listed P1, P2, and P3 with corresponding hours and added helpful definitions and measurement context. Extra process details are relevant and non-intrusive, fully resolving the request.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        4.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant answered the user’s question directly with the three priority levels and their SLA hours, and explained how the SLA is measured, which satisfies the objective. It supported the opening with up to five concise bullets that align with the cited document’s wording, including definitions and related review practices, without adding unstated duties. It used only the internal knowledge search tool, cited the returned document, and did not claim any telemetry or external data. The response followed the required format: a brief opening, up to five bullets, the mandated course‑guidance line, and a proper Sources line listing the document used. There were no safety, privacy, or authorization issues, and the sequencing and tool use were appropriate.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        null,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "inputs.case_id": "C09-after-hours-contractor",
+      "inputs.query": "Can a contractor work on site after hours without a permit?",
+      "inputs.response": "No — a contractor may not work on site after hours without an approved after‑hours permit on file, and after‑hours is outside 07:00–18:00 local time; the permit must nominate a Harbourline site contact who is reachable by phone for the whole visit.\n\n- After‑hours access outside 07:00 to 18:00 requires an approved after‑hours permit and a named Harbourline site contact reachable by phone for the whole visit.  \n- After‑hours access without a permit is logged as a warning and reviewed by the site manager on the next working day.  \n- Permits to work must be issued by the site manager before hot work, work at height, work on the fire system or any isolation of a life‑safety system.  \n- A hot‑work permit requires a fire‑system isolation and a 60‑minute fire watch after the work ends, and no hot‑work permit is issued where the site's fire certificate is overdue.\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.  \nSources: Contractor safety and site access.",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The query asks whether a contractor can work on site after hours without a permit. The context explicitly states that contractor access outside 07:00–18:00 requires an approved after-hours permit and a named site contact, and that contractors may not work after hours without a permit on file. It also notes that unpermitted after-hours access is logged as a warning and reviewed the next working day. The response directly answers \"No\" and includes all relevant details: the time window defining after-hours, the requirement for an approved after-hours permit, the need for a reachable Harbourline site contact, and the logging/review process. The response further includes additional, context-supported information about permits to work (hot work, work at height, fire system work, and life-safety isolations) and hot-work-specific requirements. While these extra details go beyond the immediate question, they are accurate and grounded in the provided context and do not introduce inaccuracies. Overall, the response is fully correct and complete with respect to the question and the context.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        4.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly answers the yes/no question by stating a contractor cannot work after hours without a permit. It adds useful context: defines after-hours, requires a reachable site contact, outlines consequences for violations, and related permit conditions, enhancing clarity and compliance understanding.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 4.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "The user asked if a contractor can work after hours without a permit. The agent clearly answered “No” and added relevant requirements and consequences. However, it introduced specific policy details (e.g., hours, “Harbourline”) that may not universally apply, making the guidance somewhat over-specific despite the disclaimer.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        4.0,
+        4.0,
+        4.0,
+        5.0,
+        5.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant answered the yes/no question directly with “No” and cited the deciding condition (after‑hours is outside 07:00–18:00 and requires an approved permit with a named contact), which matches the retrieved “Contractor safety and site access” guidance. It provided up to five concise bullets that remain within scope and are grounded in the same document, without inventing steps. It followed the required format, including the course‑guidance disclaimer and a proper Sources line citing the document used, and it did not claim any external or telemetry data. No safety, privacy, or formatting violations are present, and the use of the knowledge search tool aligns with the workflow expectations.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "inputs.case_id": "C10-platform-data-source",
+      "inputs.query": "Where does the Site Operations Advisor get its telemetry from?",
+      "inputs.response": "The advisor gets telemetry from edge building systems (BMS controllers, lift controllers, fire indicator panels, access readers and smart meters) which are ingested, validated and enriched into a lakehouse and a short-term real‑time store; the advisor does not read raw telemetry itself but reports figures by calling the Site APIs (get_site_summary, get_open_work_orders, get_incidents, get_inspection_schedule).\n\n- Edge devices publish events to an ingestion tier where stream processing validates and tags each event with site and asset.  \n- Processed telemetry lands in a historical lakehouse and a real‑time store for recent days.  \n- The advisor obtains all operational figures only via the Site APIs/tools; it never reads raw telemetry directly.  \n- The Site APIs are exposed through the organisation’s AI gateway with identity, token and logging controls for the agent.  \n- Procedures and guidance used by the advisor are indexed in the knowledge search so rules come from documents while figures come from the Site APIs.\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.  \nSources: Site operations platform: reference architecture overview",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The context explains that building telemetry originates at edge systems (BMS controllers, lift controllers, fire indicator panels, access control readers, smart meters), is ingested and enriched via stream processing, and stored in a lakehouse and a real-time store. It also states that the Site Operations Advisor never reads raw telemetry; instead, every figure it reports comes from the Site APIs/tools (get_site_summary, get_open_work_orders, get_incidents, get_inspection_schedule) exposed through the AI gateway with identity and logging controls. The response accurately reflects all of these points: it identifies the edge sources, the ingestion/enrichment, the destinations (lakehouse and real-time store), and crucially clarifies that the advisor accesses figures only via the Site APIs and not raw telemetry. It also mentions the AI gateway controls and the role of the knowledge index, both supported by the context. There are no inaccuracies or unsupported claims, and the answer directly and completely addresses where the advisor gets telemetry from (indirectly via Site APIs backed by ingested telemetry).",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly identifies the telemetry sources (edge building systems) and clarifies that the advisor accesses data via Site APIs rather than raw feeds. It adds useful architectural context (ingestion, lakehouse/real-time stores, API gateway), enhancing understanding of how telemetry is obtained.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 5.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "The user asked where the Site Operations Advisor gets telemetry. The agent explained sources (edge building systems), the ingestion and storage pipeline, and that the advisor accesses data via Site APIs rather than raw telemetry, even naming endpoints. This thorough, relevant explanation fully resolves the intent.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant directly answered the platform question using the operations knowledge search, as required for platform queries, and did not claim or use telemetry tools. It followed the mandated answer structure: a concise opening, up to five supporting bullet points, the required disclaimer line, and a Sources line citing the correct document title without listing the search itself. No figures were fabricated and no external or unapproved sources were used. The content aligns with the provided platform overview (edge systems ingestion, lakehouse/real-time stores, and that figures come via Site APIs, not raw telemetry). There are no safety, privacy, or procedural violations, and no missing deliverables.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "inputs.case_id": "C11-false-alarm-reduction",
+      "inputs.query": "How do we reduce false fire alarms at a site?",
+      "inputs.response": "Start with these actions: clean or relocate contaminated detectors, require a fire‑system isolation on every hot‑work permit, replace smoke detectors with heat detectors in kitchens where the code allows, and review alarms monthly — a site with more than three false alarms in a month must get a detector survey.\n\n- Clean or relocate detectors in dusty plant rooms or contaminated spaces as the first response to nuisance alarms.  \n- Require a fire‑system isolation be applied for every hot‑work permit to stop contractor‑caused alarms.  \n- Where the building code permits, fit heat detectors instead of smoke detectors in tenancy kitchens to reduce cooking‑related alarms.  \n- Review false alarms monthly and arrange a detector survey for any site that records more than three false alarms in a month.  \n- Log the monthly fire test in the BMS and treat failed tests or false‑alarm investigations as P2 work orders, and send tenant notices in advance for planned tests that will sound alarms.\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.  \nSources: Fire system inspection schedule; Tenant communications and the scope of operations guidance; Work order priorities and SLAs.",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The context's 'Reducing false alarms' section specifies causes (dust in plant rooms, hot work without isolation, cooking in kitchens) and responses: clean or relocate the detector; require a fire-system isolation on every hot-work permit; fit heat detectors in kitchens where allowed; and conduct a detector survey if a site has more than three false alarms in a month. The response includes all these measures accurately and explicitly, including the monthly review and the >3 threshold leading to a detector survey. It also adds points about logging the monthly fire test in the BMS and treating failed tests and false-alarm investigations as P2 work orders, which are grounded in the 'Inspection cycle' and 'Work order priorities and SLAs' context, and mentions sending tenant notices for planned tests that will sound alarms, which is grounded in the 'Tenant communications' guidance. While those additions are tangential to reducing false alarms, they are still accurate and supported by the provided context and do not introduce any incorrect or unrelated information. Overall, the answer is fully correct and complete based on the context.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly answers how to reduce false fire alarms with concrete, actionable steps (detector cleaning/relocation, hot-work isolation, detector selection, monitoring thresholds). It adds useful process guidance (logging, work orders, tenant notices) and caveats about code compliance, offering practical insight beyond basics.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 4.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "User asked how to reduce false fire alarms at a site. Agent provided actionable, site-level measures (detector cleaning/relocation, hot-work isolation, appropriate detector types, reviews, logging/communications) with safety disclaimers. Advice is practical and targeted but omits occupant education, alarm verification delays, and coordination with monitoring/AHJ, so not fully exhaustive.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        5.0,
+        4.0,
+        4.0,
+        4.0,
+        4.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant directly answered the procedural question with specific actions taken verbatim from the guidance on reducing false alarms, and appropriately used only the knowledge search (no telemetry needed). It followed the required response format: a concise opening, up to five bullets, the required course‑guidance disclaimer, and a Sources line listing only the documents used. The steps cited (clean/relocate detectors, require isolation for hot work, fit heat detectors where code allows, monthly reviews with detector surveys after >3 in a month) align with the returned documents. The added notes about logging monthly fire tests, treating failed tests and false‑alarm investigations as P2, and sending tenant notices for planned sounding tests are also grounded in the retrieved documents. There are no unsafe or privacy issues, no external data claims, and no missing required elements. Minor phrasing (“must get a detector survey”) does not alter the stated threshold or duties materially. Overall, no material failures across objectives, rules, or procedure.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "inputs.case_id": "C12-energy-anomaly",
+      "inputs.query": "When is a site's energy use an anomaly and who acts on it?",
+      "inputs.response": "A day's consumption more than 20% above its baseline is an energy anomaly, and the BMS raises an energy_anomaly event that the regional facilities manager must review and decide corrective action on within two working days.\n\n- The usual causes listed are a chiller running in a fault state, an AHU left in manual after contractor work, or lighting and plant left on after hours.  \n- The site operations team and the Site Operations Advisor provide guidance on energy issues and can explain the procedures and telemetry used to detect anomalies.  \n- Monthly sustainability reports list anomaly days by site and region and use smart meter readings and work orders as the data sources.  \n- If you see an energy_anomaly event in the BMS, expect the regional facilities manager to review it within two working days and then assign corrective work or investigations per the regional decision.\n\nCourse guidance, not legal or engineering advice: check the current building code and the real procedure before acting.  \nSources: Energy and sustainability targets; Tenant communications and the scope of operations guidance.",
+      "outputs.groundedness.groundedness": 5.0,
+      "outputs.groundedness.groundedness_result": "pass",
+      "outputs.groundedness.groundedness_reason": "Let's think step by step: The context states that a day's consumption more than 20% above its baseline is an energy anomaly, the BMS raises an energy_anomaly event, and the regional facilities manager reviews it within two working days and decides corrective action. The response correctly repeats these details, directly answering both parts of the query (when it’s an anomaly and who acts on it). It also includes additional grounded details from the context: common causes (chiller fault, AHU manual, lighting/plant left on), the operations team/Advisor’s scope regarding energy guidance and explaining procedures/telemetry, and that monthly reports list anomaly days and use smart meter/work order data. These additions are consistent with the provided documents and do not introduce inaccuracies. There is a slight paraphrase about telemetry being used to detect anomalies, but it stays within the context’s scope (advisor explains procedures and telemetry). No contradictions or extraneous, unsupported claims are present. Therefore, the response is fully grounded, accurate, and complete.",
+      "outputs.groundedness.groundedness_threshold": 3,
+      "outputs.groundedness.groundedness_judgements": [
+        2.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.relevance.relevance": 5.0,
+      "outputs.relevance.relevance_result": "pass",
+      "outputs.relevance.relevance_reason": "The response directly answers both parts: it defines an anomaly (day’s use >20% above baseline) and identifies who acts (regional facilities manager) with a review timeline. It adds useful context on detection, common causes, reporting, and support roles, enhancing clarity.",
+      "outputs.relevance.relevance_threshold": 3,
+      "outputs.relevance.relevance_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.intent_resolution.intent_resolution": 5.0,
+      "outputs.intent_resolution.intent_resolution_result": "pass",
+      "outputs.intent_resolution.intent_resolution_reason": "The user asked when energy use counts as an anomaly and who acts on it. The agent gave a clear threshold (20% above baseline), described the BMS event, identified the regional facilities manager with a two-day review window, and added helpful context. Minor ambiguity about ‘baseline’ only.",
+      "outputs.intent_resolution.intent_resolution_threshold": 3,
+      "outputs.intent_resolution.intent_resolution_judgements": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "outputs.task_adherence.task_adherence": 1.0,
+      "outputs.task_adherence.task_adherence_result": "pass",
+      "outputs.task_adherence.task_adherence_reason": "The assistant directly answered both parts of the question using internal guidance: it defined an energy anomaly as a day more than 20 per cent above baseline and stated the regional facilities manager reviews and decides corrective action within two working days, which matches the cited document. The format requirements were followed: a concise opening, four short supporting bullets, the required course‑guidance disclaimer, and a Sources line listing only the documents returned. No telemetry was needed or used, consistent with the scope. There was no unsafe content or privacy risk, no unapproved tools, and no fabricated figures. Minor wording differences (“20%” and “must”) do not materially alter the guidance or usability. Overall, the response stays within scope, adheres to the sourcing rules, and follows the required procedural and presentation steps.",
+      "outputs.task_adherence.task_adherence_threshold": 0,
+      "outputs.task_adherence.task_adherence_judgements": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "metrics": {
+    "groundedness.groundedness": 5.0,
+    "groundedness.binary_aggregate": 1.0,
+    "relevance.relevance": 5.0,
+    "relevance.binary_aggregate": 1.0,
+    "intent_resolution.intent_resolution": 4.818,
+    "intent_resolution.binary_aggregate": 1.0,
+    "task_adherence.task_adherence": 1.0,
+    "task_adherence.binary_aggregate": 1.0,
+    "tool_call_accuracy.tool_call_accuracy": 5.0,
+    "tool_call_accuracy.binary_aggregate": 1.0,
+    "declined.declined": 1.0,
+    "declined.binary_aggregate": 1.0
+  },
+  "agent": "hbl-site-ops-advisor",
+  "evaluated_at": "2026-10-26 16:12",
+  "judge": "gpt-5",
+  "judgements_per_case": 5,
+  "agent_version": "7"
+}

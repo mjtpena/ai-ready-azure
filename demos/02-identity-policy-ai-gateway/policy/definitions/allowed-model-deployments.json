@@ -1,0 +1,62 @@
+{
+  "name": "hbl-ops-allowed-model-deployments",
+  "properties": {
+    "displayName": "Harbourline AI guardrail: only approved models may be deployed",
+    "policyType": "Custom",
+    "mode": "All",
+    "description": "Denies Microsoft.CognitiveServices/accounts/deployments whose model name is not in the approved list. Mode is All because deployments are a child resource without location or tags. Relies on the alias Microsoft.CognitiveServices/accounts/deployments/model.name; if that alias is missing in your tenant, deploy with deployModelAllowListPolicy=false (see README).",
+    "metadata": {
+      "category": "Harbourline AI Platform",
+      "version": "1.0.0",
+      "layer": "L2 Trust and control"
+    },
+    "parameters": {
+      "allowedModels": {
+        "type": "Array",
+        "metadata": {
+          "displayName": "Allowed model names",
+          "description": "Model names (as in the Foundry catalogue) that teams may deploy."
+        },
+        "defaultValue": [
+          "gpt-5-mini",
+          "gpt-5",
+          "gpt-5.1",
+          "gpt-5.2",
+          "gpt-4.1",
+          "gpt-4.1-mini",
+          "text-embedding-3-small",
+          "text-embedding-3-large"
+        ]
+      },
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.CognitiveServices/accounts/deployments"
+          },
+          {
+            "field": "Microsoft.CognitiveServices/accounts/deployments/model.name",
+            "notIn": "[parameters('allowedModels')]"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  }
+}

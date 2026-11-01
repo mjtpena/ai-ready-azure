@@ -1,0 +1,30 @@
+<!--
+  Building block 3: metering. llm-emit-token-metric (formerly azure-openai-emit-token-metric) sends
+  "Prompt Tokens", "Completion Tokens" and "Total Tokens" custom metrics to the Application Insights logger
+  configured on the API (see infra/modules/monitoring.bicep). Each dimension becomes a customDimensions key,
+  so kql/token-usage-by-team.kql can split spend by team, subscription, caller IP and API.
+  Up to 10 dimensions. "Team" is read from the x-team header the client sends, defaulting to the
+  APIM subscription name (one subscription per team is the recommended pattern).
+  Works on every tier, including Consumption.
+-->
+<policies>
+    <inbound>
+        <base />
+        <set-variable name="team" value="@(context.Request.Headers.GetValueOrDefault("x-team", context.Subscription?.Name ?? "unknown"))" />
+        <llm-emit-token-metric namespace="hbl-ai-gateway">
+            <dimension name="Subscription ID" value="@(context.Subscription?.Id ?? "none")" />
+            <dimension name="Client IP" value="@(context.Request.IpAddress)" />
+            <dimension name="API ID" value="@(context.Api.Id)" />
+            <dimension name="Team" value="@((string)context.Variables["team"])" />
+        </llm-emit-token-metric>
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <base />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>

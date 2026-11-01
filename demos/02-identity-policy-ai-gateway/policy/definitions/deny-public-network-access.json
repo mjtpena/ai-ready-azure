@@ -1,0 +1,49 @@
+{
+  "name": "hbl-ops-restrict-public-network",
+  "properties": {
+    "displayName": "Harbourline AI guardrail: AI accounts should not be reachable from the public internet",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Flags Microsoft.CognitiveServices/accounts whose public network access is Enabled and whose network ACL default action is not Deny. Compliant designs use private endpoints (publicNetworkAccess=Disabled) or an IP allow-list. Assigned as Audit in the course because the demo laptop and APIM v2 (no VNet) must reach the account; switch to Deny once private endpoints are in place. Same aliases as the built-in 'Azure AI Services resources should restrict network access'.",
+    "metadata": {
+      "category": "Harbourline AI Platform",
+      "version": "1.0.0",
+      "layer": "L2 Trust and control"
+    },
+    "parameters": {
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect"
+        },
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ],
+        "defaultValue": "Audit"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "field": "Microsoft.CognitiveServices/accounts/publicNetworkAccess",
+            "notEquals": "Disabled"
+          },
+          {
+            "field": "Microsoft.CognitiveServices/accounts/networkAcls.defaultAction",
+            "notEquals": "Deny"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  }
+}

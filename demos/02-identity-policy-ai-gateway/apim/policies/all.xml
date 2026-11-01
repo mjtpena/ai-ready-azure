@@ -1,0 +1,83 @@
+<!--
+  The policy that is actually deployed on the "foundry-inference" API (infra/modules/apim.bicep loads this file).
+  It combines inbound-basic.xml, content-safety.xml, token-limit.xml and token-metrics.xml in the order the
+  request flows: who are you -> which team -> is the prompt safe -> is there budget -> meter it -> route it
+  with the gateway's own identity. semantic-cache.xml is optional; see that file for how to add it.
+
+  Named values (created by Bicep): tenant-id, entra-audience, tokens-per-minute.
+  Policy name aliases: llm-token-limit = azure-openai-token-limit, llm-emit-token-metric = azure-openai-emit-token-metric,
+  llm-semantic-cache-* = azure-openai-semantic-cache-*. Use the llm-* names for new work.
+-->
+<policies>
+    <inbound>
+        <base />
+        <!-- 1. Who is calling? An Entra ID token from our tenant is mandatory; the subscription key alone is not enough. -->
+        <validate-azure-ad-token tenant-id="{{tenant-id}}" header-name="Authorization"
+            failed-validation-httpcode="401"
+            failed-validation-error-message="Unauthorized. Present an Entra ID bearer token for the Harbourline AI gateway."
+            output-token-variable-name="callerJwt">
+            <audiences>
+                <audience>{{entra-audience}}</audience>
+            </audiences>
+        </validate-azure-ad-token>
+
+        <!-- 2. Which team / site group? Used for metering and budgets. Defaults come from the APIM subscription. -->
+        <set-variable name="team" value="@(context.Request.Headers.GetValueOrDefault("x-team", context.Subscription?.Name ?? "unknown"))" />
+        <set-variable name="siteGroup" value="@(context.Request.Headers.GetValueOrDefault("x-site-group", context.Subscription?.Id ?? "anonymous"))" />
+
+        <!-- 3. Is the prompt safe? Prompt Shields + harm categories, before any tokens are spent. 403 when blocked. -->
+        <llm-content-safety backend-id="content-safety-backend" shield-prompt="true">
+            <categories output-type="EightSeverityLevels">
+                <category name="Hate" threshold="4" />
+                <category name="SelfHarm" threshold="4" />
+                <category name="Sexual" threshold="4" />
+                <category name="Violence" threshold="4" />
+            </categories>
+        </llm-content-safety>
+
+        <!-- 4. Is there budget? Tokens per minute per site group. 429 + Retry-After when exhausted. -->
+        <llm-token-limit counter-key="@((string)context.Variables["siteGroup"])"
+            tokens-per-minute="{{tokens-per-minute}}"
+            estimate-prompt-tokens="true"
+            remaining-tokens-header-name="x-remaining-tokens"
+            remaining-tokens-variable-name="remainingTokens"
+            tokens-consumed-header-name="x-consumed-tokens"
+            retry-after-header-name="Retry-After" />
+
+        <!-- 5. Meter it. Custom metrics land in Application Insights (kql/token-usage-by-team.kql). -->
+        <llm-emit-token-metric namespace="hbl-ai-gateway">
+            <dimension name="Subscription ID" value="@(context.Subscription?.Id ?? "none")" />
+            <dimension name="Client IP" value="@(context.Request.IpAddress)" />
+            <dimension name="API ID" value="@(context.Api.Id)" />
+            <dimension name="Team" value="@((string)context.Variables["team"])" />
+        </llm-emit-token-metric>
+
+        <!-- 6. Route to Foundry with the gateway's OWN managed identity. The caller's token and key stop here. -->
+        <set-backend-service backend-id="foundry-backend" />
+        <authentication-managed-identity resource="https://cognitiveservices.azure.com" output-token-variable-name="gatewayToken" ignore-error="false" />
+        <set-header name="Authorization" exists-action="override">
+            <value>@("Bearer " + (string)context.Variables["gatewayToken"])</value>
+        </set-header>
+        <set-header name="api-key" exists-action="delete" />
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <base />
+        <!-- Make the gateway visible to the client: which gateway region answered, and who the caller was resolved as. -->
+        <set-header name="x-hbl-gateway" exists-action="override">
+            <value>@("apim/" + context.Deployment.Region)</value>
+        </set-header>
+        <set-header name="x-hbl-team" exists-action="override">
+            <value>@((string)context.Variables["team"])</value>
+        </set-header>
+    </outbound>
+    <on-error>
+        <base />
+        <!-- 401 (token), 403 (content safety) and 429 (token limit) responses also carry the gateway marker. -->
+        <set-header name="x-hbl-gateway" exists-action="override">
+            <value>@("apim/" + context.Deployment.Region)</value>
+        </set-header>
+    </on-error>
+</policies>

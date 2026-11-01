@@ -1,0 +1,50 @@
+{
+  "name": "hbl-ops-allowed-ai-locations",
+  "properties": {
+    "displayName": "Harbourline AI guardrail: AI accounts may only be created in approved NZ/AU regions",
+    "policyType": "Custom",
+    "mode": "Indexed",
+    "description": "Denies Microsoft.CognitiveServices/accounts outside the allowed regions (default australiaeast and newzealandnorth). Building telemetry and tenant data stay in-region; model availability is verified per region in the Foundry portal before a region is added to the list.",
+    "metadata": {
+      "category": "Harbourline AI Platform",
+      "version": "1.0.0",
+      "layer": "L2 Trust and control"
+    },
+    "parameters": {
+      "allowedLocations": {
+        "type": "Array",
+        "metadata": {
+          "displayName": "Allowed locations",
+          "description": "Regions where Foundry / AI Services accounts may live.",
+          "strongType": "location"
+        },
+        "defaultValue": [ "australiaeast", "newzealandnorth" ]
+      },
+      "effect": {
+        "type": "String",
+        "metadata": {
+          "displayName": "Effect"
+        },
+        "allowedValues": [ "Audit", "Deny", "Disabled" ],
+        "defaultValue": "Deny"
+      }
+    },
+    "policyRule": {
+      "if": {
+        "allOf": [
+          {
+            "field": "type",
+            "equals": "Microsoft.CognitiveServices/accounts"
+          },
+          {
+            "field": "location",
+            "notIn": "[parameters('allowedLocations')]"
+          }
+        ]
+      },
+      "then": {
+        "effect": "[parameters('effect')]"
+      }
+    }
+  }
+}

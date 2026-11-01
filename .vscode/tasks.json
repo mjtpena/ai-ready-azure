@@ -1,0 +1,563 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Slides: build the deck (slides/dist/*.pptx)",
+      "type": "shell",
+      "command": "npm run build",
+      "options": {
+        "cwd": "${workspaceFolder}/slides",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Data: regenerate the Harbourline dataset",
+      "type": "shell",
+      "command": ".venv/Scripts/python.exe demos/00-shared/generate_data.py",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Tests: run the test suite",
+      "type": "shell",
+      "command": ".venv/Scripts/python.exe -m pytest tests -q",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Scrub: check the tree for customer strings",
+      "type": "shell",
+      "command": ".venv/Scripts/python.exe scripts/scrub_check.py",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 1: CLI estate tour (live)",
+      "type": "shell",
+      "command": "DEMO_NO_PAUSE=1 ./tour.sh",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/01-azure-ai-estate-tour",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 1: CLI estate tour (mock)",
+      "type": "shell",
+      "command": "DEMO_MODE=mock ./tour.sh",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/01-azure-ai-estate-tour",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 2: deploy infrastructure (15-20 min)",
+      "type": "shell",
+      "command": "./deploy.sh",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/02-identity-policy-ai-gateway",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 2 Act 1: direct call with Entra ID",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe client/call_model.py --via direct",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/02-identity-policy-ai-gateway",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 2 Act 1: workload container logs",
+      "type": "shell",
+      "command": "az container logs -g ${RESOURCE_GROUP:-rg-hbl-ops} -n ci-hbl-ops-site-advisor | head -16",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/02-identity-policy-ai-gateway",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 2 Act 2: non-compliant deployment (expected to FAIL)",
+      "type": "shell",
+      "command": "az deployment group create -g ${RESOURCE_GROUP:-rg-hbl-ops} --template-file policy/noncompliant.bicep 2>&1 | grep -oE 'Harbourline guardrail: [^\"]*' || true",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/02-identity-policy-ai-gateway",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 2 Act 3: gateway call",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe client/call_model.py --via gateway",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/02-identity-policy-ai-gateway",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 2 Act 3: trip the token limit (429)",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe client/call_model.py --via gateway --repeat 4 --sleep 0",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/02-identity-policy-ai-gateway",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 2 Act 3: content safety block (403)",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe client/call_model.py --via gateway --unsafe",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/02-identity-policy-ai-gateway",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 2: mock run (offline)",
+      "type": "shell",
+      "command": "DEMO_MODE=mock ../../.venv/Scripts/python.exe client/call_model.py --via gateway --repeat 4",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/02-identity-policy-ai-gateway",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 3: build the knowledge index",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe 01_create_index.py",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/03-grounded-foundry-agent",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 3: create agent version",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe 02_create_agent.py",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/03-grounded-foundry-agent",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 3: chat (scripted demo questions)",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe 03_chat.py --script demo_questions.txt",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/03-grounded-foundry-agent",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 3: chat (interactive)",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe 03_chat.py",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/03-grounded-foundry-agent",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 3: mock run (offline)",
+      "type": "shell",
+      "command": "DEMO_MODE=mock ../../.venv/Scripts/python.exe 03_chat.py --script demo_questions.txt",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/03-grounded-foundry-agent",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 4: traced run",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe 01_traced_run.py",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/04-trace-and-evaluate",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 4: evaluate (recorded responses)",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe 02_evaluate.py",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/04-trace-and-evaluate",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 4: evaluate (re-run agent first)",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe 02_evaluate.py --run-agent",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/04-trace-and-evaluate",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 4: quality gate",
+      "type": "shell",
+      "command": "../../.venv/Scripts/python.exe 03_quality_gate.py eval/results.json",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/04-trace-and-evaluate",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 4: mock run (offline)",
+      "type": "shell",
+      "command": "DEMO_MODE=mock ../../.venv/Scripts/python.exe 01_traced_run.py",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/04-trace-and-evaluate",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Video: record terminal casts for a scene",
+      "type": "shell",
+      "command": ".venv/Scripts/python.exe video/record.py video/scenes/${input:scene}.json",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Video: render a scene (video only, for layout checks)",
+      "type": "shell",
+      "command": ".venv/Scripts/python.exe video/render.py video/scenes/${input:scene}.json --video-only --out video/media/${input:scene}.video.mp4",
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Module 2: CLEANUP (deletes rg-hbl-ops)",
+      "type": "shell",
+      "command": "./cleanup.sh",
+      "options": {
+        "cwd": "${workspaceFolder}/demos/02-identity-policy-ai-gateway",
+        "shell": {
+          "executable": "C:\\Program Files\\Git\bin\bash.exe",
+          "args": [
+            "-lc"
+          ]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "scene",
+      "type": "pickString",
+      "description": "Scene",
+      "options": [
+        "demo1",
+        "demo2",
+        "demo3",
+        "demo4"
+      ],
+      "default": "demo2"
+    }
+  ]
+}

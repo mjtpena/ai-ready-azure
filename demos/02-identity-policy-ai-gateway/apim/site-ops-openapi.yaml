@@ -1,0 +1,43 @@
+openapi: 3.0.3
+info:
+  title: Harbourline Site APIs
+  version: "1.0"
+  description: The four Site API tools of the Site Operations Advisor, fronted by the AI gateway and exported as the MCP server hbl-site-tools.
+servers:
+  - url: https://placeholder.azurewebsites.net/api
+paths:
+  /sites/{site_id}/summary:
+    get:
+      operationId: get_site_summary
+      summary: Summary for one site over the last 7 days of the recorded window
+      description: What needs attention (open P1 work, SLA breaches, HVAC faults open over 48 hours, overdue inspections, lift entrapments), open work orders, faults and incidents by system, the next fire and lift certificates, energy against baseline and the contractors.
+      parameters:
+        - { name: site_id, in: path, required: true, schema: { type: string }, description: "Site id, e.g. HBL-AKL-017." }
+      responses: { "200": { description: OK, content: { application/json: { schema: { type: object } } } } }
+  /work-orders:
+    get:
+      operationId: get_open_work_orders
+      summary: Open work orders across a region or all sites, for one system or any, open for more than N hours
+      parameters:
+        - { name: region, in: query, required: true, schema: { type: string }, description: "ALL, or a region code: AKL, WLG, SYD or MEL." }
+        - { name: system, in: query, required: true, schema: { type: string }, description: "any, hvac, lift, fire, access or energy." }
+        - { name: open_longer_than_hours, in: query, required: true, schema: { type: integer }, description: "Only work orders open for more than this many hours; 0 for all open." }
+      responses: { "200": { description: OK, content: { application/json: { schema: { type: object } } } } }
+  /incidents:
+    get:
+      operationId: get_incidents
+      summary: Incidents over the last N days (1 to 14) for a region or ALL and a system or any
+      parameters:
+        - { name: region, in: query, required: true, schema: { type: string }, description: "ALL, or a region code: AKL, WLG, SYD or MEL." }
+        - { name: system, in: query, required: true, schema: { type: string }, description: "any, hvac, lift, fire, access or energy." }
+        - { name: days, in: query, required: true, schema: { type: integer }, description: "Look-back window in days, 1 to 14." }
+      responses: { "200": { description: OK, content: { application/json: { schema: { type: object } } } } }
+  /inspections:
+    get:
+      operationId: get_inspection_schedule
+      summary: Statutory certificate inspections due in a calendar month for a site, a region or ALL, plus everything overdue
+      parameters:
+        - { name: scope, in: query, required: true, schema: { type: string }, description: "A site id like HBL-AKL-017, a region code or ALL." }
+        - { name: system, in: query, required: true, schema: { type: string }, description: "fire, lift or all." }
+        - { name: month, in: query, required: true, schema: { type: string }, description: "Calendar month, YYYY-MM." }
+      responses: { "200": { description: OK, content: { application/json: { schema: { type: object } } } } }

@@ -1,0 +1,19 @@
+name: scrub
+on: [push, pull_request]
+jobs:
+  scrub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: No private names or identifiers in the tree
+        env:
+          SCRUB_FORBIDDEN: ${{ secrets.SCRUB_FORBIDDEN }}   # the private banned-word list; shape checks only without it
+        run: python scripts/scrub_check.py --no-live
+      - name: Data and tool contracts
+        env:
+          SCRUB_FORBIDDEN: ${{ secrets.SCRUB_FORBIDDEN }}
+        run: |
+          pip install -q pytest
+          python -m pytest tests -q

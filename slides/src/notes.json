@@ -1,0 +1,87 @@
+{
+ "1": [],
+ "2": [
+  "I'm Michael John Pena. This is the walkthrough I'd give a platform team the week before their first agent ships. If you only need one part, the chapters are in the description."
+ ],
+ "3": [
+  "Start with what actually changes. The platform is the same. The physics are not.",
+  "A classic service is deterministic: same input, same answer, so you test it with assertions. An AI workload gives you a distribution of answers, so you evaluate it with a judge over a dataset, and the median counts. Capacity used to be requests per second; now it is tokens per minute, per model, per region, which is why quota and budgets move to the gateway. The failure modes are new words: hallucination, prompt injection, data leakage, an agent with more permission than it needs. And data access flips: your code used to read your database; now the model reads whatever the agent is allowed to reach.",
+  "Look at the right-hand column. Every cell is a platform job. Not one of them is fixed by a better model."
+ ],
+ "4": [
+  "This is the map for the next forty minutes, and it is a responsibility map, not a deployment diagram.",
+  "Five layers. Foundation: the workload landing zone, regions, quota, Bicep. Trust and control: identity, policy, the gateway, content safety. Data and context: telemetry in the lakehouse, the Site APIs as tools, the index. Intelligence: Foundry models, agents and evaluation. And experiences and agents at the top, where the advisor meets a person.",
+  "The four risks everyone names sit on the right, each with the layer that fixes it. Injection and over-permissioned agents are trust and control problems. Leakage is a data and context problem. Hallucination is an intelligence problem you fix with grounding and a gate. None of them is fixed by a better model."
+ ],
+ "5": [
+  "The worked example is a fictional smart-building operator, Harbourline Facilities. Commercial sites: a hundred and twenty of them, across Auckland, Wellington, Sydney and Melbourne. Chillers and air handlers, lifts, fire panels, access control, smart meters, all reporting into a building management system. Plus the things people wrote down: procedures, inspection schedules, work orders.",
+  "Let's say a chiller at a Sydney site trips twice before lunch, and the site manager wants the procedure, the open work orders, and whether that site is also due a fire inspection. Three sources, one question. That is the agent: a site operations advisor. The hero question is on the left: which sites have H-vac faults open more than forty-eight hours and are due a fire inspection this month. That needs two tools, one procedure, and it names three sites with sources. The question on the right is the one that matters just as much: can we evict a tenant for late rent. Neither source covers it. The right answer is a refusal, and the release gate is what defends it."
+ ],
+ "6": [
+  "Four services the platform team adds, one demo each, in the order you would build them. An identity: Entra-only Foundry, a managed identity on every hop, and an Entra Agent ID for the agent itself. One front door: the API Management AI gateway. Context you own: the index and the Site API's four tools behind a versioned agent. And a release gate: traces, evaluators, and a check in CI that fails a regression.",
+  "Demo one first, because none of this needs a new kind of Azure."
+ ],
+ "7": [
+  "Demo one. Three minutes from the control plane: the resource group, the model catalogue, and the regions."
+ ],
+ "8": [
+  "Where does the AI workload land? In a workload landing zone, like everything else. The hierarchy on the left is the one you already run: management groups with policy inherited from the top, a platform landing zone for identity and connectivity, and a subscription per workload. The course's resource group is one of those. The only thing I would add is a shared AI platform subscription for the central Foundry resource, the quota, and the gateway, because those are things you want to share and meter.",
+  "Two things changed in October twenty twenty-six. The Cloud Adoption Framework renamed application landing zones to workload landing zones and folded the data landing zones into them. And it says plainly that AI needs no separate landing zone design: extend the governance baseline you have. If you want a head start, the A I Landing Zones reference implementation deploys this in Bicep or Terraform on Azure Verified Modules, with or without a platform landing zone underneath. The landing zone is a template, not a ticket."
+ ],
+ "9": [
+  "Identity. One directory, three kinds of principal. People, with groups and conditional access: the site manager asking the question. Workloads, with managed identities and federation: the container, the gateway, and CI signing in with O I D C. And now agents. Say you give the agent the operations team's own service principal. It can now do everything that team can, and the audit log cannot tell them apart. That is the gap Entra Agent ID closes.",
+  "Entra Agent ID gives an agent its own identity in the directory. A blueprint is the template; the agent identities hang off it; conditional access and access reviews apply to them like any other principal, and each one has a sponsor, an accountable human. Foundry provisions this for you when it creates the agent, which you will see in demo two.",
+  "Two consoles sit on top of the one directory. The Foundry Control Plane is for the teams that build and run agents: fleet view, tracing, evaluation. Agent three sixty-five is for the teams that govern them: inventory, access reviews, lifecycle. And Purview's sensitivity labels and network D L P now cover agent traffic too. The rule that follows from all of it: every tool call is an authorisation decision and a trace span. Which principal, which scope, on whose behalf."
+ ],
+ "10": [
+  "One front door. Without a gateway, model keys spread through app settings, quota is first come first served, and nobody can say what a team spent. With one, every call runs the same chain. Validate the Entra token: who is calling. Content safety with Prompt Shields: is it safe, and a four oh three if not, before a single token is spent. The token limit: is there budget left? A four twenty-nine if not. The token metric: meter it by team. And then the gateway routes to Foundry with its own managed identity. The caller's token and key stop at the gateway. Foundry never sees them.",
+  "Every one of those policies is generally available on the classic API Management tiers today, in XML, and the same gateway exports a REST API as an M C P server so tools go through the same door as models. The dedicated AI Gateway tier is the direction: policy cards instead of XML, one endpoint for every OpenAI-compatible provider plus Anthropic, M C P servers as a first-class thing. It is in preview in two regions, so demo two shows the classic path."
+ ],
+ "11": [
+  "Demo two. Eight minutes, three acts: who may call, what may exist, how every call behaves. Watch for the four twenty-nine."
+ ],
+ "12": [
+  "The model is rented. The context is owned. These numbers are illustrative, but the shape is real: a hundred and twenty sites, about a million sensor readings a day, fourteen days hot in a real-time store with the rest in the lakehouse, and eight procedures in the index, thirty-five chunks, cited by title.",
+  "Nobody can rent Harbourline's fault history. Any competitor can rent the same model. So the platform's job is to make that context reachable, governed and fresh. That is where the differentiation lives, and it is a platform job, not a prompt."
+ ],
+ "13": [
+  "Four kinds of context, four access paths, and the agent's first job is to pick the right one. Numbers come through tools: the Site APIs with strict schemas, work orders, incidents, inspections, a site summary. Words come through retrieval: the procedures chunked by section in Azure AI Search, cited by title. What is happening right now comes through K Q L on the real-time store. And who you are talking to comes from memory, which Foundry now offers as a managed capability in preview.",
+  "Mixing them up is the most common cause of a bad agent: a rules question answered from telemetry, or a figure guessed from a document. The instructions in demo three are mostly about keeping these four apart."
+ ],
+ "14": [
+  "Foundry Agent Service, as it stands in October twenty twenty-six. An agent is a versioned definition: instructions plus tools. An endpoint routes one hundred per cent of traffic to one version. Clients talk to it through the Responses and Conversations protocol, and it can be published into Teams, an app, or a command line. Versions are what make a release gate possible, so that part matters more than it looks.",
+  "The chip row is what you would reach for next. Hosted agents, now generally available: your own Agent Framework code running in Foundry's managed runtime. Routines, in preview: run an agent on a schedule or a trigger. Toolboxes: one managed M C P endpoint for a curated set of tools. Memory across procedural, user and session scopes. Agent Framework one point oh is stable for Python and dot net, with Claude Agent S D K and GitHub Copilot S D K integrations. And the Foundry Toolkit for VS Code is generally available. What the third demo builds is a prompt agent, the simplest kind, on purpose."
+ ],
+ "15": [
+  "Demo three. Build the index, build the agent, ask five questions. Watch for the one that fails first."
+ ],
+ "16": [
+  "Operate. Observability first, and the good news is that nothing here is bespoke. The S D K emits OpenTelemetry gen A I spans for the agent, the model and each tool. The gateway emits its own logs and token metrics. Foundry adds traces and evaluation scores. All three land in Application Insights and Log Analytics.",
+  "On the right, what you get out. The Agents view in Application Insights, in preview, built on those same conventions: tool and model tiles, errors in one click, and a simple end-to-end story of a run. Explore in Grafana opens the prebuilt dashboards. The Azure Copilot Observability Agent, generally available, lets you ask the telemetry a question in English and bills in Azure Agent Credits. And the S R E Agent takes that from diagnosis to approve-to-act. One rule for production: content recording off. You do not need the prompt text to see that one question cost three times the others."
+ ],
+ "17": [
+  "Evaluation as a release gate. The loop across the top: build a version, evaluate it with a judge five times per case, gate on the scores with an exit code, promote the endpoint, monitor in production, improve. The gate is the amber box, and it is the step most teams skip.",
+  "Three families of evaluator. Quality: groundedness, relevance, coherence. Safety: violence, hate, self-harm, protected material. And the agent evaluators, still in preview: intent resolution, task adherence, tool-call accuracy. Evaluations, tracing and monitoring have been generally available since March twenty twenty-six.",
+  "And it carries on after release. Continuous evaluation scores a sampled share of real responses as they happen, on the agent's Monitor tab. Scheduled evaluations against your dataset catch drift. Scheduled red teaming gives security an attack success rate, from the AI Red Teaming Agent built on PyRIT. Evaluation is the test suite and the S L O at once."
+ ],
+ "18": [
+  "One more slide before demo four, because the direction matters. Today the gate is a short script over a twelve-row dataset, and the discipline is the dataset. Build twenty twenty-six announced five things that turn the policy document itself into rows the gate can run. Agent Control Specification describes controls as YAML at five checkpoints. ASSERT, open source, turns a written policy, never give legal advice, into executable evaluations. The rubric evaluator scores the nuance with weighted criteria. Guided guardrail setup wires the personal-data and jailbreak filters from a questionnaire. And Agent Optimizer reads the traces and evaluations and ranks what to fix. Demo four does the short-script version, and you will see exactly what it catches."
+ ],
+ "19": [
+  "Demo four. Trace a run, evaluate twelve cases, run the gate, then break it on purpose."
+ ],
+ "20": [
+  "Which model, in October twenty twenty-six. Two frontier families are sold directly by Azure now. The G P T five point six family, Sol, Terra and Luna, with Data Zone S K Us on the newer ones: the default for an agent that calls tools. The Claude five family, Sonnet, Opus and Fable five point one, on the same Entra token and the same bill: a judge from a different family, or long reasoning. And the model router, updated this month, picks a model per request when your traffic is mixed.",
+  "What the demos ran: G P T five mini as the agent, G P T five as the judge. A small agent and a stricter judge, baselined before recording. Two rules. Never judge with the family you are judging. And re-baseline the dataset before you switch the judge; switch the agent model only through the gate."
+ ],
+ "21": [
+  "What changes for the platform team. Walk the layers. Foundation: a workload landing zone, and quota becomes a platform concern. Trust and control: the AI gateway, four policies, an identity per agent. Data and context: one knowledge index with an owner, and tools instead of database access. Intelligence: one central Foundry resource, projects per product team, versions and a gate. Experiences: publish through Agent three sixty-five; nothing new to host.",
+  "Four services are new. The rest is configuration of what you already run, and no separate AI platform team appears in this picture. The first ninety days, in order: policies in audit mode and a gateway with one product. Central Foundry and quota. One knowledge index with a named owner. A first read-only agent with its own Agent ID. And a thirty-row dataset with a gate in CI before anyone writes a second agent."
+ ],
+ "22": [
+  "So, the one point, with the four moments you just watched underneath it. AI changes the workload, not the control plane. An agent is a workload with a model inside it. Give it an identity, one front door, context you own and a release gate, and the Azure you already operate is what makes it safe to ship. Request disallowed by policy. Four twenty-nine. An answer with sources. Exit one. Those four are the course."
+ ],
+ "23": [
+  "The code, the runbooks and the review log that decided when this was finished are in the repository on screen; the links are in the description. Harbourline Facilities doesn't exist, but every control you saw does, and you can deploy all of it from that repository. Thanks for watching."
+ ]
+}

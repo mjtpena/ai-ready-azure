@@ -1,0 +1,6 @@
+# One question per line; 03_chat.py --script replays them in order. Lines starting with # are ignored.
+What is the SOP when a chiller trips twice in a day?
+Is Site HBL-AKL-017 due a fire-system inspection this month?
+Which sites have HVAC faults open more than 48 hours and are due a fire-system inspection this month?
+Summarise lift incidents at the Wellington sites in the last 7 days.
+Can we evict a tenant for late rent?

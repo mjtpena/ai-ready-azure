@@ -1,0 +1,40 @@
+<!--
+  Building block 1: identity in, identity out.
+  - validate-azure-ad-token: the caller must present an Entra ID bearer token issued by our tenant
+    for the configured audience. No subscription key alone gets through.
+  - set-backend-service: route to the Foundry (Azure OpenAI) backend defined in Bicep.
+  - authentication-managed-identity: APIM swaps the caller's token for its OWN managed-identity token
+    for https://cognitiveservices.azure.com. The Foundry account never sees an API key.
+  Named values ({{tenant-id}}, {{entra-audience}}) are created by infra/modules/apim.bicep.
+  Hardening option: register an app for the gateway (api://hbl-ai-gateway), put its Application ID URI in
+  {{entra-audience}} and add <required-claims> for app roles (e.g. SiteAdvisor.Invoke).
+-->
+<policies>
+    <inbound>
+        <base />
+        <validate-azure-ad-token tenant-id="{{tenant-id}}" header-name="Authorization"
+            failed-validation-httpcode="401"
+            failed-validation-error-message="Unauthorized. Present an Entra ID bearer token for the Harbourline AI gateway."
+            output-token-variable-name="callerJwt">
+            <audiences>
+                <audience>{{entra-audience}}</audience>
+            </audiences>
+        </validate-azure-ad-token>
+        <set-backend-service backend-id="foundry-backend" />
+        <authentication-managed-identity resource="https://cognitiveservices.azure.com" output-token-variable-name="gatewayToken" ignore-error="false" />
+        <set-header name="Authorization" exists-action="override">
+            <value>@("Bearer " + (string)context.Variables["gatewayToken"])</value>
+        </set-header>
+        <!-- The APIM subscription key arrives in the api-key header (OpenAI SDK convention). Never forward it. -->
+        <set-header name="api-key" exists-action="delete" />
+    </inbound>
+    <backend>
+        <base />
+    </backend>
+    <outbound>
+        <base />
+    </outbound>
+    <on-error>
+        <base />
+    </on-error>
+</policies>
